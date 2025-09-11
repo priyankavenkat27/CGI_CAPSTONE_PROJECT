@@ -2,15 +2,21 @@ package com.ecom.Pages;
 
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ContactUspage {
     WebDriver driver;
+        WebDriverWait wait;
 
     // 🔹 Locators
     By contactUsLink = By.partialLinkText("Contact");
     By getInTouchHeader = By.xpath("//h2[text()='Get In Touch']");
     By getInTouchEmail = By.xpath("//div[@class='contact-info']//p[contains(text(),'info@automationexercise.com')]");
+    By homePageBreadCrumb = By.xpath("//*[@id=\"form-section\"]/a");
 
     // Contact form fields
     By nameField = By.name("name");
@@ -21,6 +27,10 @@ public class ContactUspage {
     By submitBtn = By.name("submit");
 
     By successMsg = By.xpath("//div[contains(text(),'Success! Your details have been submitted successfully.')]");
+    By scrollToTopBtn = By.id("scrollUp");
+    By subscriptionInput = By.id("susbscribe_email");
+    By subscriptionButton = By.id("subscribe");
+    By subscriptionSuccess = By.xpath("//div[@class='alert-success alert']");
 
     // 🔹 Constructor
     public ContactUspage(WebDriver driver) {
@@ -109,5 +119,27 @@ public class ContactUspage {
 
     public boolean isFormSubmissionSuccessMessageDisplayed() {
         return driver.findElement(successMsg).isDisplayed();
+    }
+
+    public void enterSubscription(String email) {
+        WebElement element = driver.findElement(subscriptionInput);
+        element.clear();
+        element.sendKeys(email);
+    }
+
+    public void clickSubscriptionButton() {
+        driver.findElement(subscriptionButton).click();
+    }
+    
+    public boolean isSubscriptionSuccessDisplayed() {
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(subscriptionSuccess)).isDisplayed();
+    }
+    
+    public void scrollPageDown(int pixels) {
+        ((JavascriptExecutor) driver).executeScript("window.scrollBy(0," + pixels + ")");
+    }
+    
+    public void clickScrollToTop() {
+        driver.findElement(scrollToTopBtn).click();
     }
 }
