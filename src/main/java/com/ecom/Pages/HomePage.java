@@ -77,4 +77,8 @@ public class HomePage {
     public String getSuccessMessage() {
         return driver.findElement(successMsg).getText();
     }
+
+    public void scrollPageDown(int pixels) {
+        ((JavascriptExecutor) driver).executeScript("window.scrollBy(0," + pixels + ")");
+    }
 }
