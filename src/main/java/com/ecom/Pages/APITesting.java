@@ -188,10 +188,6 @@ public class APITesting {
     public boolean isApiList14LinkDisplayed() { 
     	return driver.findElement(ApiList14Link).isDisplayed(); 
     }
-
-    public void scrollPageDown(int pixels) {
-        ((JavascriptExecutor) driver).executeScript("window.scrollBy(0," + pixels + ")");
-    }
     
     public void scrollToElement(By locator) {
         WebElement element = driver.findElement(locator);
