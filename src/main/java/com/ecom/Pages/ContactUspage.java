@@ -142,4 +142,8 @@ public class ContactUspage {
     public void clickScrollToTop() {
         driver.findElement(scrollToTopBtn).click();
     }
+
+    public void clickHomeButtonBreadCrumb() {
+        driver.findElement(homePageBreadCrumb).click();
+    }
 }
