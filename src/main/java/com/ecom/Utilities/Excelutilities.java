@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 
+import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
@@ -29,7 +30,8 @@ public class Excelutilities {
         // Loop through rows (skip header row at index 0)
         for (int i = 1; i < rowcount; i++) {
             for (int j = 0; j < colcount; j++) {
-                data[i - 1][j] = worksheet.getRow(i).getCell(j).toString();
+                DataFormatter formatter = new DataFormatter();
+            	data[i - 1][j] = formatter.formatCellValue(worksheet.getRow(i).getCell(j));
             }
         }
 
