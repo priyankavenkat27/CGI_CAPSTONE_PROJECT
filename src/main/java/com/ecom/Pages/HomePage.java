@@ -67,8 +67,11 @@ public class HomePage {
 
     // ✅ Subscription
     public void enterSubscriptionEmail(String email) {
-        driver.findElement(subscriptionEmail).clear();
         driver.findElement(subscriptionEmail).sendKeys(email);
+    }
+
+    public void clearsubscriptionEmail() {
+        driver.findElement(subscriptionEmail).clear();
     }
 
     public void clickSubscribe() {
