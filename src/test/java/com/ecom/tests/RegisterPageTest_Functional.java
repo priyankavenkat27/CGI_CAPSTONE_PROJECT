@@ -33,7 +33,7 @@ public class RegisterPageTest_Functional extends BaseTest {
             .addScreenCaptureFromPath(Screenshotutilities.capturescreen(driver, "BrowserLaunch"));
     }
     
-    @Test(priority = 2, dependsOnMethods = {"verifyBrowserLaunch"})
+    @Test(priority = 2)
     public void verifyHomePageVisibility() throws IOException {
         test = extent.createTest("Verify Home Page Visibility");
         Assert.assertTrue(driver.getTitle().contains("Automation Exercise"), "Home page is not visible!");
@@ -43,7 +43,7 @@ public class RegisterPageTest_Functional extends BaseTest {
             .addScreenCaptureFromPath(Screenshotutilities.capturescreen(driver, "HomePageVisibility"));
     }
 
-    @Test(priority = 3, dependsOnMethods = {"verifyHomePageVisibility"})
+    @Test(priority = 3)
     public void verifySignupLoginButtonAvailability() throws IOException {
         test = extent.createTest("Verify Signup/Login Button Availability on Home Page");
         signupPage.clicksignup(); 
@@ -54,7 +54,7 @@ public class RegisterPageTest_Functional extends BaseTest {
             .addScreenCaptureFromPath(Screenshotutilities.capturescreen(driver, "SignupLoginButtonVisible"));
     }
 
-    @Test(priority = 4, dependsOnMethods = {"verifySignupLoginButtonAvailability"})
+    @Test(priority = 4)
     public void verifySignupLoginNavigation() throws IOException {
         test = extent.createTest("Verify Navigation of Signup/Login Button");
         Assert.assertTrue(driver.getCurrentUrl().contains("login"), "Did not navigate to Signup/Login page!");
@@ -64,7 +64,7 @@ public class RegisterPageTest_Functional extends BaseTest {
             .addScreenCaptureFromPath(Screenshotutilities.capturescreen(driver, "SignupLoginNavigation"));
     }
 
-    @Test(priority = 5, dependsOnMethods = {"verifySignupLoginNavigation"})
+    @Test(priority = 5)
     public void verifyNewUserSignupSectionVisibility() throws IOException {
         test = extent.createTest("Verify 'New User Signup!' Visibility on Signup Section");
         Assert.assertTrue(signupPage.newUserSignupHeading(), "'New User Signup!' section not visible!");
@@ -74,7 +74,7 @@ public class RegisterPageTest_Functional extends BaseTest {
             .addScreenCaptureFromPath(Screenshotutilities.capturescreen(driver, "NewUserSignupVisibility"));
     }
     
-    @Test(dataProvider = "accountData1", priority = 6, dependsOnMethods = {"verifyNewUserSignupSectionVisibility"})
+    @Test(dataProvider = "accountData1", priority = 6)
     public void verifyExistSignup(String name, String email) throws IOException {
         test = extent.createTest("Register with: " + name + " | Email: " + email);
         signupPage.clicksignup(); 
