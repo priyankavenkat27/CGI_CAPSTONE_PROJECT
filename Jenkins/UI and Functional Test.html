@@ -1,0 +1,2031 @@
+<html>
+<head>
+<title>TestNG:  UI and Functional Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>UI and Functional Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>286/11/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Sep 15 20:59:06 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>792 seconds (792230 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.ecom.tests.CartPageTest_Functional.TC_ECOM_Cart_008()'><b>TC_ECOM_Cart_008</b><br>Test class: com.ecom.tests.CartPageTest_Functional<br>Parameters: Zebuuu, zebuuu1@test.com, Mr, Password123, 10, May, 1995, Zebuuu, Test, 123 Street, City, India, TN, Chennai, 600986, 987654321</td>
+<td><div><pre>java.lang.AssertionError: Expected condition failed: waiting for visibility of element located by By.name: name (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.16&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55228}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55228/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3394484f85d50ba8592184b1763194ab
+	at com.ecom.tests.CartPageTest_Functional.handleFailure(CartPageTest_Functional.java:39)
+	at com.ecom.tests.CartPageTest_Functional.TC_ECOM_Cart_008(CartPageTest_Functional.java:367)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace600270822", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace600270822'><pre>java.lang.AssertionError: Expected condition failed: waiting for visibility of element located by By.name: name (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.16&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55228}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55228/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3394484f85d50ba8592184b1763194ab
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.ecom.tests.CartPageTest_Functional.handleFailure(CartPageTest_Functional.java:39)
+	at com.ecom.tests.CartPageTest_Functional.TC_ECOM_Cart_008(CartPageTest_Functional.java:367)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>14</td>
+<td>com.ecom.tests.CartPageTest_Functional@2beee7ff</td></tr>
+<tr>
+<td title='com.ecom.tests.SubscriptionHomePageTest_Functional.verifySubscriptionUseralreadyExist()'><b>verifySubscriptionUseralreadyExist</b><br>Test class: com.ecom.tests.SubscriptionHomePageTest_Functional<br>Parameters: kaviya@gmail.com</td>
+<td><div><pre>java.lang.AssertionError: Subscription success message should NOT be displayed! expected [false] but found [true]
+	at com.ecom.tests.SubscriptionHomePageTest_Functional.verifySubscriptionUseralreadyExist(SubscriptionHomePageTest_Functional.java:127)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace462869575", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace462869575'><pre>java.lang.AssertionError: Subscription success message should NOT be displayed! expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at com.ecom.tests.SubscriptionHomePageTest_Functional.verifySubscriptionUseralreadyExist(SubscriptionHomePageTest_Functional.java:127)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.ecom.tests.SubscriptionHomePageTest_Functional@2177849e</td></tr>
+<tr>
+<td title='com.ecom.tests.RegisterPageTest_Functional.verifyInvalidName()'><b>verifyInvalidName</b><br>Test class: com.ecom.tests.RegisterPageTest_Functional<br>Parameters: 12#3, kaviya900@gmail.com</td>
+<td><div><pre>java.lang.AssertionError: Navigation to Create Account should NOT happen with invalid name
+	at com.ecom.tests.RegisterPageTest_Functional.verifyInvalidName(RegisterPageTest_Functional.java:106)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace136183278", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace136183278'><pre>java.lang.AssertionError: Navigation to Create Account should NOT happen with invalid name
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.ecom.tests.RegisterPageTest_Functional.verifyInvalidName(RegisterPageTest_Functional.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>2</td>
+<td>com.ecom.tests.RegisterPageTest_Functional@3541cb24</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_ProductPageTest.verifySubscriptionUseralreadyExist()'><b>verifySubscriptionUseralreadyExist</b><br>Test class: com.ecom.tests.UI_ProductPageTest<br>Parameters: kaviya@gmail.com</td>
+<td><div><pre>java.lang.AssertionError: Subscription success message should NOT be displayed! expected [false] but found [true]
+	at com.ecom.tests.UI_ProductPageTest.verifySubscriptionUseralreadyExist(UI_ProductPageTest.java:330)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace371968488", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace371968488'><pre>java.lang.AssertionError: Subscription success message should NOT be displayed! expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at com.ecom.tests.UI_ProductPageTest.verifySubscriptionUseralreadyExist(UI_ProductPageTest.java:330)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.ecom.tests.UI_ProductPageTest@3315d2d7</td></tr>
+<tr>
+<td title='com.ecom.tests.ContactUsPageTest_Functional.verifySubscriptionUseralreadyExist()'><b>verifySubscriptionUseralreadyExist</b><br>Test class: com.ecom.tests.ContactUsPageTest_Functional<br>Parameters: validuser1@test.com</td>
+<td><div><pre>java.lang.AssertionError: Subscription success message is displayed instead of error for already registered email
+	at com.ecom.tests.ContactUsPageTest_Functional.verifySubscriptionUseralreadyExist(ContactUsPageTest_Functional.java:307)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2050376675", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2050376675'><pre>java.lang.AssertionError: Subscription success message is displayed instead of error for already registered email
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.ecom.tests.ContactUsPageTest_Functional.verifySubscriptionUseralreadyExist(ContactUsPageTest_Functional.java:307)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.ecom.tests.ContactUsPageTest_Functional@5939a379</td></tr>
+<tr>
+<td title='com.ecom.tests.ProductPageTest_Functional.verifySubscriptionUseralreadyExist()'><b>verifySubscriptionUseralreadyExist</b><br>Test class: com.ecom.tests.ProductPageTest_Functional<br>Parameters: kaviya@gmail.com</td>
+<td><div><pre>java.lang.AssertionError: Subscription success message should NOT be displayed! expected [false] but found [true]
+	at com.ecom.tests.ProductPageTest_Functional.verifySubscriptionUseralreadyExist(ProductPageTest_Functional.java:324)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace875053581", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace875053581'><pre>java.lang.AssertionError: Subscription success message should NOT be displayed! expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at com.ecom.tests.ProductPageTest_Functional.verifySubscriptionUseralreadyExist(ProductPageTest_Functional.java:324)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.ecom.tests.ProductPageTest_Functional@52102734</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifySubscriptionUseralreadyExist()'><b>verifySubscriptionUseralreadyExist</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI<br>Parameters: kaviya@gmail.com</td>
+<td><div><pre>java.lang.AssertionError: Subscription success message should NOT be displayed! expected [false] but found [true]
+	at com.ecom.tests.TestCasesPageTest_UI.verifySubscriptionUseralreadyExist(TestCasesPageTest_UI.java:524)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2005937878", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2005937878'><pre>java.lang.AssertionError: Subscription success message should NOT be displayed! expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at com.ecom.tests.TestCasesPageTest_UI.verifySubscriptionUseralreadyExist(TestCasesPageTest_UI.java:524)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.ContactUsPageTest_Functional.verifyNameInvalid()'><b>verifyNameInvalid</b><br>Test class: com.ecom.tests.ContactUsPageTest_Functional<br>Parameters: 12#, kaviya@gmail.com, Review, Cant able to view review product</td>
+<td><div><pre>java.lang.AssertionError: Success message should NOT be displayed and pop should rise as Invalid Name expected [false] but found [true]
+	at com.ecom.tests.ContactUsPageTest_Functional.verifyNameInvalid(ContactUsPageTest_Functional.java:187)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1477996447", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1477996447'><pre>java.lang.AssertionError: Success message should NOT be displayed and pop should rise as Invalid Name expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at com.ecom.tests.ContactUsPageTest_Functional.verifyNameInvalid(ContactUsPageTest_Functional.java:187)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>2</td>
+<td>com.ecom.tests.ContactUsPageTest_Functional@5939a379</td></tr>
+<tr>
+<td title='com.ecom.tests.APITestingPageTest_UI.verifySubscriptionUseralreadyExist()'><b>verifySubscriptionUseralreadyExist</b><br>Test class: com.ecom.tests.APITestingPageTest_UI<br>Parameters: kaviya@gmail.com</td>
+<td><div><pre>java.lang.AssertionError: Subscription success message should NOT be displayed! expected [false] but found [true]
+	at com.ecom.tests.APITestingPageTest_UI.verifySubscriptionUseralreadyExist(APITestingPageTest_UI.java:393)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1679401185", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1679401185'><pre>java.lang.AssertionError: Subscription success message should NOT be displayed! expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at com.ecom.tests.APITestingPageTest_UI.verifySubscriptionUseralreadyExist(APITestingPageTest_UI.java:393)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.ecom.tests.APITestingPageTest_UI@4ef37659</td></tr>
+<tr>
+<td title='com.ecom.tests.ContactUsPageTest_Functional.verifyNoFileAttach()'><b>verifyNoFileAttach</b><br>Test class: com.ecom.tests.ContactUsPageTest_Functional<br>Parameters: kaviya, kaviya@gmail.com, Review, Cant able to view review product</td>
+<td><div><pre>java.lang.AssertionError: Success message should NOT be displayed and pop should rise as Invalid Name expected [false] but found [true]
+	at com.ecom.tests.ContactUsPageTest_Functional.verifyNoFileAttach(ContactUsPageTest_Functional.java:213)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2113171614", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2113171614'><pre>java.lang.AssertionError: Success message should NOT be displayed and pop should rise as Invalid Name expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at com.ecom.tests.ContactUsPageTest_Functional.verifyNoFileAttach(ContactUsPageTest_Functional.java:213)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>1</td>
+<td>com.ecom.tests.ContactUsPageTest_Functional@5939a379</td></tr>
+<tr>
+<td title='com.ecom.tests.CartPageTest_UI.verifySubscriptionUseralreadyExist()'><b>verifySubscriptionUseralreadyExist</b><br>Test class: com.ecom.tests.CartPageTest_UI<br>Parameters: kaviya@gmail.com</td>
+<td><div><pre>java.lang.AssertionError: Subscription success message should NOT be displayed! expected [false] but found [true]
+	at com.ecom.tests.CartPageTest_UI.verifySubscriptionUseralreadyExist(CartPageTest_UI.java:281)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1415390560", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1415390560'><pre>java.lang.AssertionError: Subscription success message should NOT be displayed! expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at com.ecom.tests.CartPageTest_UI.verifySubscriptionUseralreadyExist(CartPageTest_UI.java:281)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.ecom.tests.CartPageTest_UI@5136d012</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.ecom.tests.ContactUsPageTest_Functional.verifySubscriptionValid()'><b>verifySubscriptionValid</b><br>Test class: com.ecom.tests.ContactUsPageTest_Functional<br>Parameters: validuser1@test.com</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.ContactUsPageTest_Functional@5939a379</td></tr>
+<tr>
+<td title='com.ecom.tests.login_functionality_tests.Tc_Ecom_Login_06_invalidLogin()'><b>Tc_Ecom_Login_06_invalidLogin</b><br>Test class: com.ecom.tests.login_functionality_tests</td>
+<td></td>
+<td>11</td>
+<td>com.ecom.tests.login_functionality_tests@e1de817</td></tr>
+<tr>
+<td title='com.ecom.tests.ContactUsPageTest_Functional.enterEmail()'><b>enterEmail</b><br>Test class: com.ecom.tests.ContactUsPageTest_Functional<br>Parameters: kaviya@gmail.com</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.ContactUsPageTest_Functional@5939a379</td></tr>
+<tr>
+<td title='com.ecom.tests.APITestingPageTest_UI.verifyApiList2LinkDisplayed()'><b>verifyApiList2LinkDisplayed</b><br>Test class: com.ecom.tests.APITestingPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.APITestingPageTest_UI@4ef37659</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifyTestCase20LinkDisplayed()'><b>verifyTestCase20LinkDisplayed</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.CartPageTest_Functional.TC_ECOM_Cart_001()'><b>TC_ECOM_Cart_001</b><br>Test class: com.ecom.tests.CartPageTest_Functional</td>
+<td></td>
+<td>1</td>
+<td>com.ecom.tests.CartPageTest_Functional@2beee7ff</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_contactus_test.TC_Contactus_003_verifyGetInTouchEmailDisplayed()'><b>TC_Contactus_003_verifyGetInTouchEmailDisplayed</b><br>Test class: com.ecom.tests.UI_contactus_test</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.UI_contactus_test@2892dae4</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_Functional.verifyTestCasesPageContent()'><b>verifyTestCasesPageContent</b><br>Test class: com.ecom.tests.TestCasesPageTest_Functional</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_Functional@40cb8df7</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_HomePageTest.verifySubscriptionScenarios()'><b>verifySubscriptionScenarios</b><br>Test class: com.ecom.tests.UI_HomePageTest<br>Parameters: keerthi@gmail.com, valid</td>
+<td></td>
+<td>2</td>
+<td>com.ecom.tests.UI_HomePageTest@355ce81c</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifySignupLoginIconDisplayed()'><b>verifySignupLoginIconDisplayed</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.CartPageTest_UI.verifyScrollToTopButton()'><b>verifyScrollToTopButton</b><br>Test class: com.ecom.tests.CartPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.CartPageTest_UI@5136d012</td></tr>
+<tr>
+<td title='com.ecom.tests.CartPageTest_UI.verifySignupLoginIconDisplayed()'><b>verifySignupLoginIconDisplayed</b><br>Test class: com.ecom.tests.CartPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.CartPageTest_UI@5136d012</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifyTestCase7LinkDisplayed()'><b>verifyTestCase7LinkDisplayed</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.APITestingPageTest_UI.verifyContactUsIconDisplayed()'><b>verifyContactUsIconDisplayed</b><br>Test class: com.ecom.tests.APITestingPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.APITestingPageTest_UI@4ef37659</td></tr>
+<tr>
+<td title='com.ecom.tests.RegisterPageTest_Functional.verifyAccountDeletedMessage()'><b>verifyAccountDeletedMessage</b><br>Test class: com.ecom.tests.RegisterPageTest_Functional</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.RegisterPageTest_Functional@3541cb24</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_contactus_test.TC_Contactus_006_verifyHomeBtnDisplayed()'><b>TC_Contactus_006_verifyHomeBtnDisplayed</b><br>Test class: com.ecom.tests.UI_contactus_test</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.UI_contactus_test@2892dae4</td></tr>
+<tr>
+<td title='com.ecom.tests.RegisterPageTest_Functional.enterCompany()'><b>enterCompany</b><br>Test class: com.ecom.tests.RegisterPageTest_Functional<br>Parameters: CGI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.RegisterPageTest_Functional@3541cb24</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_ProductPageTest.verifyViewProductIcon()'><b>verifyViewProductIcon</b><br>Test class: com.ecom.tests.UI_ProductPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.UI_ProductPageTest@3315d2d7</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_HomePageTest.verifyScrollBarFunctionalityOnHomePage()'><b>verifyScrollBarFunctionalityOnHomePage</b><br>Test class: com.ecom.tests.UI_HomePageTest</td>
+<td></td>
+<td>3</td>
+<td>com.ecom.tests.UI_HomePageTest@355ce81c</td></tr>
+<tr>
+<td title='com.ecom.tests.CartPageTest_Functional.TC_ECOM_Cart_004()'><b>TC_ECOM_Cart_004</b><br>Test class: com.ecom.tests.CartPageTest_Functional</td>
+<td></td>
+<td>3</td>
+<td>com.ecom.tests.CartPageTest_Functional@2beee7ff</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifySubscriptionInvalid()'><b>verifySubscriptionInvalid</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI<br>Parameters: kaviyaGma.com</td>
+<td></td>
+<td>2</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifyTestCasesSectionDisplayed()'><b>verifyTestCasesSectionDisplayed</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.APITestingPageTest_UI.verifySignupLoginIconDisplayed()'><b>verifySignupLoginIconDisplayed</b><br>Test class: com.ecom.tests.APITestingPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.APITestingPageTest_UI@4ef37659</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_LoginPageTest.verifyLogoImagePresence()'><b>verifyLogoImagePresence</b><br>Test class: com.ecom.tests.UI_LoginPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.ecom.tests.UI_LoginPageTest@29647f75</td></tr>
+<tr>
+<td title='com.ecom.tests.RegisterPageTest_Functional.enterZipcode()'><b>enterZipcode</b><br>Test class: com.ecom.tests.RegisterPageTest_Functional<br>Parameters: 560001</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.RegisterPageTest_Functional@3541cb24</td></tr>
+<tr>
+<td title='com.ecom.tests.RegisterPageTest_Functional.enterMobile()'><b>enterMobile</b><br>Test class: com.ecom.tests.RegisterPageTest_Functional<br>Parameters: 1234567891</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.RegisterPageTest_Functional@3541cb24</td></tr>
+<tr>
+<td title='com.ecom.tests.ContactUsPageTest_Functional.enterSubject()'><b>enterSubject</b><br>Test class: com.ecom.tests.ContactUsPageTest_Functional<br>Parameters: Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.ContactUsPageTest_Functional@5939a379</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_Functional.verifySubscriptionWithValidEmail()'><b>verifySubscriptionWithValidEmail</b><br>Test class: com.ecom.tests.TestCasesPageTest_Functional<br>Parameters: keerthi12@gmail.com</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_Functional@40cb8df7</td></tr>
+<tr>
+<td title='com.ecom.tests.RegisterPageTest_Functional.clickDeleteAccount()'><b>clickDeleteAccount</b><br>Test class: com.ecom.tests.RegisterPageTest_Functional</td>
+<td></td>
+<td>1</td>
+<td>com.ecom.tests.RegisterPageTest_Functional@3541cb24</td></tr>
+<tr>
+<td title='com.ecom.tests.ProductPageTest_Functional.verifyAllProductSection()'><b>verifyAllProductSection</b><br>Test class: com.ecom.tests.ProductPageTest_Functional</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.ProductPageTest_Functional@52102734</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifyApiTestingIconDisplayed()'><b>verifyApiTestingIconDisplayed</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.login_functionality_tests.Tc_Ecom_Login_04_verifyLoginToYourAccountText()'><b>Tc_Ecom_Login_04_verifyLoginToYourAccountText</b><br>Test class: com.ecom.tests.login_functionality_tests</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.login_functionality_tests@e1de817</td></tr>
+<tr>
+<td title='com.ecom.tests.RegisterPageTest_Functional.verifyAccountCreatedMessage()'><b>verifyAccountCreatedMessage</b><br>Test class: com.ecom.tests.RegisterPageTest_Functional</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.RegisterPageTest_Functional@3541cb24</td></tr>
+<tr>
+<td title='com.ecom.tests.login_functionality_tests.Tc_Ecom_Login_03_navigateToLoginSignupPage()'><b>Tc_Ecom_Login_03_navigateToLoginSignupPage</b><br>Test class: com.ecom.tests.login_functionality_tests</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.login_functionality_tests@e1de817</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifyScrollToTopButton()'><b>verifyScrollToTopButton</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.RegisterPageTest_Functional.enterAddress1()'><b>enterAddress1</b><br>Test class: com.ecom.tests.RegisterPageTest_Functional<br>Parameters: 123 Main Street</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.RegisterPageTest_Functional@3541cb24</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_Functional.verifySubscriptionWithEmptyEmail()'><b>verifySubscriptionWithEmptyEmail</b><br>Test class: com.ecom.tests.TestCasesPageTest_Functional</td>
+<td></td>
+<td>10</td>
+<td>com.ecom.tests.TestCasesPageTest_Functional@40cb8df7</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifyVideoTutorialsIconDisplayed()'><b>verifyVideoTutorialsIconDisplayed</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_LoginPageTest.verifyLoginEdgeCases()'><b>verifyLoginEdgeCases</b><br>Test class: com.ecom.tests.UI_LoginPageTest<br>Parameters: , , BlankEmailBlankPassword</td>
+<td></td>
+<td>32</td>
+<td>com.ecom.tests.UI_LoginPageTest@29647f75</td></tr>
+<tr>
+<td title='com.ecom.tests.CartPageTest_Functional.TC_ECOM_Cart_010()'><b>TC_ECOM_Cart_010</b><br>Test class: com.ecom.tests.CartPageTest_Functional</td>
+<td></td>
+<td>3</td>
+<td>com.ecom.tests.CartPageTest_Functional@2beee7ff</td></tr>
+<tr>
+<td title='com.ecom.tests.RegisterPageTest_Functional.clickContinueAfterAccountDeleted()'><b>clickContinueAfterAccountDeleted</b><br>Test class: com.ecom.tests.RegisterPageTest_Functional</td>
+<td></td>
+<td>2</td>
+<td>com.ecom.tests.RegisterPageTest_Functional@3541cb24</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifyTestCase24LinkDisplayed()'><b>verifyTestCase24LinkDisplayed</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_ProductPageTest.verifySubscriptionInvalid()'><b>verifySubscriptionInvalid</b><br>Test class: com.ecom.tests.UI_ProductPageTest<br>Parameters: kaviyaGma.com</td>
+<td></td>
+<td>2</td>
+<td>com.ecom.tests.UI_ProductPageTest@3315d2d7</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_contactus_test.TC_Contact_013_verifySubscriptionWithEmptyEmail()'><b>TC_Contact_013_verifySubscriptionWithEmptyEmail</b><br>Test class: com.ecom.tests.UI_contactus_test</td>
+<td></td>
+<td>1</td>
+<td>com.ecom.tests.UI_contactus_test@2892dae4</td></tr>
+<tr>
+<td title='com.ecom.tests.APITestingPageTest_UI.verifyApiList3LinkDisplayed()'><b>verifyApiList3LinkDisplayed</b><br>Test class: com.ecom.tests.APITestingPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.APITestingPageTest_UI@4ef37659</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_ProductPageTest.verifyApiTestingIconDisplayed()'><b>verifyApiTestingIconDisplayed</b><br>Test class: com.ecom.tests.UI_ProductPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.UI_ProductPageTest@3315d2d7</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_Functional.verifyScrollToTopArrowFunctionality()'><b>verifyScrollToTopArrowFunctionality</b><br>Test class: com.ecom.tests.TestCasesPageTest_Functional</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_Functional@40cb8df7</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifyTestCase10LinkDisplayed()'><b>verifyTestCase10LinkDisplayed</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_HomePageTest.verifyCarouselIndicatorDotIsVisibleAndWorking()'><b>verifyCarouselIndicatorDotIsVisibleAndWorking</b><br>Test class: com.ecom.tests.UI_HomePageTest</td>
+<td></td>
+<td>1</td>
+<td>com.ecom.tests.UI_HomePageTest@355ce81c</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_contactus_test.TC_Contact_023_verifyMessageFieldWithData()'><b>TC_Contact_023_verifyMessageFieldWithData</b><br>Test class: com.ecom.tests.UI_contactus_test</td>
+<td></td>
+<td>1</td>
+<td>com.ecom.tests.UI_contactus_test@2892dae4</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_LoginPageTest.verifySignupEdgeCases()'><b>verifySignupEdgeCases</b><br>Test class: com.ecom.tests.UI_LoginPageTest<br>Parameters: , , NoNameNoEmail</td>
+<td></td>
+<td>12</td>
+<td>com.ecom.tests.UI_LoginPageTest@29647f75</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_contactus_test.TC_Contact_021_verifyEmailFieldEmpty()'><b>TC_Contact_021_verifyEmailFieldEmpty</b><br>Test class: com.ecom.tests.UI_contactus_test</td>
+<td></td>
+<td>1</td>
+<td>com.ecom.tests.UI_contactus_test@2892dae4</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_HomePageTest.verifySubscriptionScenarios()'><b>verifySubscriptionScenarios</b><br>Test class: com.ecom.tests.UI_HomePageTest<br>Parameters: , blank</td>
+<td></td>
+<td>2</td>
+<td>com.ecom.tests.UI_HomePageTest@355ce81c</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_ProductPageTest.verifyCategorySection()'><b>verifyCategorySection</b><br>Test class: com.ecom.tests.UI_ProductPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.UI_ProductPageTest@3315d2d7</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_ProductPageTest.verifyProductSearch()'><b>verifyProductSearch</b><br>Test class: com.ecom.tests.UI_ProductPageTest<br>Parameters: Jeans</td>
+<td></td>
+<td>1</td>
+<td>com.ecom.tests.UI_ProductPageTest@3315d2d7</td></tr>
+<tr>
+<td title='com.ecom.tests.ContactUsPageTest_Functional.verifyBrowserLaunch()'><b>verifyBrowserLaunch</b><br>Test class: com.ecom.tests.ContactUsPageTest_Functional</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.ContactUsPageTest_Functional@5939a379</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_contactus_test.TC_Contact_015_verifyNameFieldDisplayed()'><b>TC_Contact_015_verifyNameFieldDisplayed</b><br>Test class: com.ecom.tests.UI_contactus_test</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.UI_contactus_test@2892dae4</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_LoginPageTest.verifySignupEdgeCases()'><b>verifySignupEdgeCases</b><br>Test class: com.ecom.tests.UI_LoginPageTest<br>Parameters: , keerthanavs@gmail.com, NoNameValidEmail</td>
+<td></td>
+<td>11</td>
+<td>com.ecom.tests.UI_LoginPageTest@29647f75</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifyTestCase9LinkDisplayed()'><b>verifyTestCase9LinkDisplayed</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_HomePageTest.verifySignupLoginButtonIsVisibleAndNavigates()'><b>verifySignupLoginButtonIsVisibleAndNavigates</b><br>Test class: com.ecom.tests.UI_HomePageTest</td>
+<td></td>
+<td>2</td>
+<td>com.ecom.tests.UI_HomePageTest@355ce81c</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_contactus_test.TC_Contact_009_verifyScrollBarWorking()'><b>TC_Contact_009_verifyScrollBarWorking</b><br>Test class: com.ecom.tests.UI_contactus_test</td>
+<td></td>
+<td>4</td>
+<td>com.ecom.tests.UI_contactus_test@2892dae4</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_contactus_test.TC_Contact_019_verifyNameFieldWithValidData()'><b>TC_Contact_019_verifyNameFieldWithValidData</b><br>Test class: com.ecom.tests.UI_contactus_test</td>
+<td></td>
+<td>1</td>
+<td>com.ecom.tests.UI_contactus_test@2892dae4</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifyTestCase5LinkDisplayed()'><b>verifyTestCase5LinkDisplayed</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.CartPageTest_Functional.TC_ECOM_Cart_003()'><b>TC_ECOM_Cart_003</b><br>Test class: com.ecom.tests.CartPageTest_Functional</td>
+<td></td>
+<td>1</td>
+<td>com.ecom.tests.CartPageTest_Functional@2beee7ff</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_LoginPageTest.verifyScrollToTopArrowFunctionalityOnSignupLoginPage()'><b>verifyScrollToTopArrowFunctionalityOnSignupLoginPage</b><br>Test class: com.ecom.tests.UI_LoginPageTest</td>
+<td></td>
+<td>13</td>
+<td>com.ecom.tests.UI_LoginPageTest@29647f75</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_ProductPageTest.verifySubscriptionValid()'><b>verifySubscriptionValid</b><br>Test class: com.ecom.tests.UI_ProductPageTest<br>Parameters: kaviya@gmail.com</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.UI_ProductPageTest@3315d2d7</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_ProductPageTest.verifyScrollToTopButton()'><b>verifyScrollToTopButton</b><br>Test class: com.ecom.tests.UI_ProductPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.UI_ProductPageTest@3315d2d7</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifyTestCase2LinkDisplayed()'><b>verifyTestCase2LinkDisplayed</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.APITestingPageTest_UI.verifyApiList5LinkDisplayed()'><b>verifyApiList5LinkDisplayed</b><br>Test class: com.ecom.tests.APITestingPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.APITestingPageTest_UI@4ef37659</td></tr>
+<tr>
+<td title='com.ecom.tests.RegisterPageTest_Functional.enterPasswordTest()'><b>enterPasswordTest</b><br>Test class: com.ecom.tests.RegisterPageTest_Functional<br>Parameters: Password@123</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.RegisterPageTest_Functional@3541cb24</td></tr>
+<tr>
+<td title='com.ecom.tests.CartPageTest_Functional.TC_ECOM_Cart_002()'><b>TC_ECOM_Cart_002</b><br>Test class: com.ecom.tests.CartPageTest_Functional</td>
+<td></td>
+<td>3</td>
+<td>com.ecom.tests.CartPageTest_Functional@2beee7ff</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifyTestCase8LinkDisplayed()'><b>verifyTestCase8LinkDisplayed</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_contactus_test.TC_Contact_010_verifyScrollToTopArrow()'><b>TC_Contact_010_verifyScrollToTopArrow</b><br>Test class: com.ecom.tests.UI_contactus_test</td>
+<td></td>
+<td>1</td>
+<td>com.ecom.tests.UI_contactus_test@2892dae4</td></tr>
+<tr>
+<td title='com.ecom.tests.RegisterPageTest_Functional.verifySpecialOffersCheckbox()'><b>verifySpecialOffersCheckbox</b><br>Test class: com.ecom.tests.RegisterPageTest_Functional</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.RegisterPageTest_Functional@3541cb24</td></tr>
+<tr>
+<td title='com.ecom.tests.RegisterPageTest_Functional.verifyLoggedInAsUsername()'><b>verifyLoggedInAsUsername</b><br>Test class: com.ecom.tests.RegisterPageTest_Functional</td>
+<td></td>
+<td>2</td>
+<td>com.ecom.tests.RegisterPageTest_Functional@3541cb24</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_HomePageTest.verifyApiTestingButtonIsVisibleAndNavigates()'><b>verifyApiTestingButtonIsVisibleAndNavigates</b><br>Test class: com.ecom.tests.UI_HomePageTest</td>
+<td></td>
+<td>3</td>
+<td>com.ecom.tests.UI_HomePageTest@355ce81c</td></tr>
+<tr>
+<td title='com.ecom.tests.CartPageTest_UI.verifySubscriptionEmpty()'><b>verifySubscriptionEmpty</b><br>Test class: com.ecom.tests.CartPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.CartPageTest_UI@5136d012</td></tr>
+<tr>
+<td title='com.ecom.tests.CartPageTest_UI.verifyTestCasesDisplayed()'><b>verifyTestCasesDisplayed</b><br>Test class: com.ecom.tests.CartPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.CartPageTest_UI@5136d012</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_HomePageTest.verifyViewProductButtonIsVisible()'><b>verifyViewProductButtonIsVisible</b><br>Test class: com.ecom.tests.UI_HomePageTest</td>
+<td></td>
+<td>2</td>
+<td>com.ecom.tests.UI_HomePageTest@355ce81c</td></tr>
+<tr>
+<td title='com.ecom.tests.APITestingPageTest_UI.verifyVideoTutorialsIconDisplayed()'><b>verifyVideoTutorialsIconDisplayed</b><br>Test class: com.ecom.tests.APITestingPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.APITestingPageTest_UI@4ef37659</td></tr>
+<tr>
+<td title='com.ecom.tests.ProductPageTest_Functional.verifySearchProductsSection()'><b>verifySearchProductsSection</b><br>Test class: com.ecom.tests.ProductPageTest_Functional</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.ProductPageTest_Functional@52102734</td></tr>
+<tr>
+<td title='com.ecom.tests.CartPageTest_UI.verifySubscriptionIconVisible()'><b>verifySubscriptionIconVisible</b><br>Test class: com.ecom.tests.CartPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.CartPageTest_UI@5136d012</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_ProductPageTest.verifySignupLoginIconDisplayed()'><b>verifySignupLoginIconDisplayed</b><br>Test class: com.ecom.tests.UI_ProductPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.UI_ProductPageTest@3315d2d7</td></tr>
+<tr>
+<td title='com.ecom.tests.ProductPageTest_Functional.verifyAddToCart()'><b>verifyAddToCart</b><br>Test class: com.ecom.tests.ProductPageTest_Functional</td>
+<td></td>
+<td>2</td>
+<td>com.ecom.tests.ProductPageTest_Functional@52102734</td></tr>
+<tr>
+<td title='com.ecom.tests.ContactUsPageTest_Functional.verifySubscriptionInvalid()'><b>verifySubscriptionInvalid</b><br>Test class: com.ecom.tests.ContactUsPageTest_Functional<br>Parameters: testgmail.com</td>
+<td></td>
+<td>2</td>
+<td>com.ecom.tests.ContactUsPageTest_Functional@5939a379</td></tr>
+<tr>
+<td title='com.ecom.tests.ProductPageTest_Functional.verifyProductAvailability()'><b>verifyProductAvailability</b><br>Test class: com.ecom.tests.ProductPageTest_Functional</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.ProductPageTest_Functional@52102734</td></tr>
+<tr>
+<td title='com.ecom.tests.RegisterPageTest_Functional.enterAddress2()'><b>enterAddress2</b><br>Test class: com.ecom.tests.RegisterPageTest_Functional<br>Parameters: Block C</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.RegisterPageTest_Functional@3541cb24</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_HomePageTest.verifyTestCasesButtonIsVisibleAndNavigates()'><b>verifyTestCasesButtonIsVisibleAndNavigates</b><br>Test class: com.ecom.tests.UI_HomePageTest</td>
+<td></td>
+<td>2</td>
+<td>com.ecom.tests.UI_HomePageTest@355ce81c</td></tr>
+<tr>
+<td title='com.ecom.tests.ProductPageTest_Functional.verifySubscriptionIconVisible()'><b>verifySubscriptionIconVisible</b><br>Test class: com.ecom.tests.ProductPageTest_Functional</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.ProductPageTest_Functional@52102734</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifyTestCase14LinkDisplayed()'><b>verifyTestCase14LinkDisplayed</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_ProductPageTest.verifyContactUsIconDisplayed()'><b>verifyContactUsIconDisplayed</b><br>Test class: com.ecom.tests.UI_ProductPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.UI_ProductPageTest@3315d2d7</td></tr>
+<tr>
+<td title='com.ecom.tests.APITestingPageTest_UI.verifyApiList11LinkDisplayed()'><b>verifyApiList11LinkDisplayed</b><br>Test class: com.ecom.tests.APITestingPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.APITestingPageTest_UI@4ef37659</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifyTestCase4LinkDisplayed()'><b>verifyTestCase4LinkDisplayed</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_Functional.verifyDetailedStepsVisibility()'><b>verifyDetailedStepsVisibility</b><br>Test class: com.ecom.tests.TestCasesPageTest_Functional</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_Functional@40cb8df7</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_LoginPageTest.verifyScrollBarFunctionalityOnSignupLoginPage()'><b>verifyScrollBarFunctionalityOnSignupLoginPage</b><br>Test class: com.ecom.tests.UI_LoginPageTest</td>
+<td></td>
+<td>11</td>
+<td>com.ecom.tests.UI_LoginPageTest@29647f75</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_Functional.verifyBrowserLaunch()'><b>verifyBrowserLaunch</b><br>Test class: com.ecom.tests.TestCasesPageTest_Functional</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_Functional@40cb8df7</td></tr>
+<tr>
+<td title='com.ecom.tests.RegisterPageTest_Functional.verifySignupLoginNavigation()'><b>verifySignupLoginNavigation</b><br>Test class: com.ecom.tests.RegisterPageTest_Functional</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.RegisterPageTest_Functional@3541cb24</td></tr>
+<tr>
+<td title='com.ecom.tests.ProductPageTest_Functional.verifyProductSearch()'><b>verifyProductSearch</b><br>Test class: com.ecom.tests.ProductPageTest_Functional<br>Parameters: Jeans</td>
+<td></td>
+<td>4</td>
+<td>com.ecom.tests.ProductPageTest_Functional@52102734</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifyTestCase3LinkDisplayed()'><b>verifyTestCase3LinkDisplayed</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_ProductPageTest.verifyAllProductSection()'><b>verifyAllProductSection</b><br>Test class: com.ecom.tests.UI_ProductPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.UI_ProductPageTest@3315d2d7</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_LoginPageTest.verifySignupWithValidData()'><b>verifySignupWithValidData</b><br>Test class: com.ecom.tests.UI_LoginPageTest<br>Parameters: Keerthana , keerthi123@gmail.com</td>
+<td></td>
+<td>12</td>
+<td>com.ecom.tests.UI_LoginPageTest@29647f75</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifySubscriptionValid()'><b>verifySubscriptionValid</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI<br>Parameters: kaviya@gmail.com</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifyCartIconDisplayed()'><b>verifyCartIconDisplayed</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.ProductPageTest_Functional.verifySubscriptionValid()'><b>verifySubscriptionValid</b><br>Test class: com.ecom.tests.ProductPageTest_Functional<br>Parameters: kaviya@gmail.com</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.ProductPageTest_Functional@52102734</td></tr>
+<tr>
+<td title='com.ecom.tests.CartPageTest_UI.verifyProductDiaplaytoBuy()'><b>verifyProductDiaplaytoBuy</b><br>Test class: com.ecom.tests.CartPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.CartPageTest_UI@5136d012</td></tr>
+<tr>
+<td title='com.ecom.tests.RegisterPageTest_Functional.verifyInvalidEmail()'><b>verifyInvalidEmail</b><br>Test class: com.ecom.tests.RegisterPageTest_Functional<br>Parameters: kaviya, kaviya.com</td>
+<td></td>
+<td>2</td>
+<td>com.ecom.tests.RegisterPageTest_Functional@3541cb24</td></tr>
+<tr>
+<td title='com.ecom.tests.RegisterPageTest_Functional.enterLastName()'><b>enterLastName</b><br>Test class: com.ecom.tests.RegisterPageTest_Functional<br>Parameters: Anjali</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.RegisterPageTest_Functional@3541cb24</td></tr>
+<tr>
+<td title='com.ecom.tests.CartPageTest_UI.verifyShoppingCartBreadcrumb()'><b>verifyShoppingCartBreadcrumb</b><br>Test class: com.ecom.tests.CartPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.CartPageTest_UI@5136d012</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifySubscriptionEmpty()'><b>verifySubscriptionEmpty</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_LoginPageTest.verifySignupWithInvalidEmail()'><b>verifySignupWithInvalidEmail</b><br>Test class: com.ecom.tests.UI_LoginPageTest<br>Parameters: Keerthana V S, keerthanavs12@gmail.com</td>
+<td></td>
+<td>4</td>
+<td>com.ecom.tests.UI_LoginPageTest@29647f75</td></tr>
+<tr>
+<td title='com.ecom.tests.RegisterPageTest_Functional.selectTitleTest()'><b>selectTitleTest</b><br>Test class: com.ecom.tests.RegisterPageTest_Functional<br>Parameters: Mrs</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.RegisterPageTest_Functional@3541cb24</td></tr>
+<tr>
+<td title='com.ecom.tests.RegisterPageTest_Functional.selectCountry()'><b>selectCountry</b><br>Test class: com.ecom.tests.RegisterPageTest_Functional<br>Parameters: India</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.RegisterPageTest_Functional@3541cb24</td></tr>
+<tr>
+<td title='com.ecom.tests.ContactUsPageTest_Functional.submitForm()'><b>submitForm</b><br>Test class: com.ecom.tests.ContactUsPageTest_Functional</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.ContactUsPageTest_Functional@5939a379</td></tr>
+<tr>
+<td title='com.ecom.tests.APITestingPageTest_UI.verifySubscriptionValid()'><b>verifySubscriptionValid</b><br>Test class: com.ecom.tests.APITestingPageTest_UI<br>Parameters: kaviya@gmail.com</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.APITestingPageTest_UI@4ef37659</td></tr>
+<tr>
+<td title='com.ecom.tests.ProductPageTest_Functional.verifyProductPrice()'><b>verifyProductPrice</b><br>Test class: com.ecom.tests.ProductPageTest_Functional</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.ProductPageTest_Functional@52102734</td></tr>
+<tr>
+<td title='com.ecom.tests.ProductPageTest_Functional.verifyProductCondition()'><b>verifyProductCondition</b><br>Test class: com.ecom.tests.ProductPageTest_Functional</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.ProductPageTest_Functional@52102734</td></tr>
+<tr>
+<td title='com.ecom.tests.RegisterPageTest_Functional.verifyNewUserSignupSectionVisibility()'><b>verifyNewUserSignupSectionVisibility</b><br>Test class: com.ecom.tests.RegisterPageTest_Functional</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.RegisterPageTest_Functional@3541cb24</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_LoginPageTest.verifyLoginEdgeCases()'><b>verifyLoginEdgeCases</b><br>Test class: com.ecom.tests.UI_LoginPageTest<br>Parameters: keerthanavs@gmail.com, Keerthi@123, InvalidEmailValidPassword</td>
+<td></td>
+<td>23</td>
+<td>com.ecom.tests.UI_LoginPageTest@29647f75</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifyTestCase23LinkDisplayed()'><b>verifyTestCase23LinkDisplayed</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifyTestCase16LinkDisplayed()'><b>verifyTestCase16LinkDisplayed</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.APITestingPageTest_UI.verifyApiList10LinkDisplayed()'><b>verifyApiList10LinkDisplayed</b><br>Test class: com.ecom.tests.APITestingPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.APITestingPageTest_UI@4ef37659</td></tr>
+<tr>
+<td title='com.ecom.tests.APITestingPageTest_UI.verifyApiList4LinkDisplayed()'><b>verifyApiList4LinkDisplayed</b><br>Test class: com.ecom.tests.APITestingPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.APITestingPageTest_UI@4ef37659</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_ProductPageTest.verifyPromotionalBannerDisplayed()'><b>verifyPromotionalBannerDisplayed</b><br>Test class: com.ecom.tests.UI_ProductPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.UI_ProductPageTest@3315d2d7</td></tr>
+<tr>
+<td title='com.ecom.tests.ContactUsPageTest_Functional.verifyScrollToTopButton()'><b>verifyScrollToTopButton</b><br>Test class: com.ecom.tests.ContactUsPageTest_Functional</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.ContactUsPageTest_Functional@5939a379</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_contactus_test.TC_Contactus_008_verifyApiTestingBtnDisplayed()'><b>TC_Contactus_008_verifyApiTestingBtnDisplayed</b><br>Test class: com.ecom.tests.UI_contactus_test</td>
+<td></td>
+<td>1</td>
+<td>com.ecom.tests.UI_contactus_test@2892dae4</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_ProductPageTest.verifyVideoTutorialsIconDisplayed()'><b>verifyVideoTutorialsIconDisplayed</b><br>Test class: com.ecom.tests.UI_ProductPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.UI_ProductPageTest@3315d2d7</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_HomePageTest.verifyContactUsButtonIsVisibleAndNavigates()'><b>verifyContactUsButtonIsVisibleAndNavigates</b><br>Test class: com.ecom.tests.UI_HomePageTest</td>
+<td></td>
+<td>3</td>
+<td>com.ecom.tests.UI_HomePageTest@355ce81c</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifyTestCase6LinkDisplayed()'><b>verifyTestCase6LinkDisplayed</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifyTestCase11LinkDisplayed()'><b>verifyTestCase11LinkDisplayed</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.ContactUsPageTest_Functional.verifySubscriptionIconVisible()'><b>verifySubscriptionIconVisible</b><br>Test class: com.ecom.tests.ContactUsPageTest_Functional</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.ContactUsPageTest_Functional@5939a379</td></tr>
+<tr>
+<td title='com.ecom.tests.ProductPageTest_Functional.verifyViewProductButton()'><b>verifyViewProductButton</b><br>Test class: com.ecom.tests.ProductPageTest_Functional</td>
+<td></td>
+<td>1</td>
+<td>com.ecom.tests.ProductPageTest_Functional@52102734</td></tr>
+<tr>
+<td title='com.ecom.tests.SubscriptionHomePageTest_Functional.verifySubscriptionValid()'><b>verifySubscriptionValid</b><br>Test class: com.ecom.tests.SubscriptionHomePageTest_Functional<br>Parameters: kaviya@gmail.com</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.SubscriptionHomePageTest_Functional@2177849e</td></tr>
+<tr>
+<td title='com.ecom.tests.APITestingPageTest_UI.verifySubscriptionInvalid()'><b>verifySubscriptionInvalid</b><br>Test class: com.ecom.tests.APITestingPageTest_UI<br>Parameters: kaviyaGma.com</td>
+<td></td>
+<td>2</td>
+<td>com.ecom.tests.APITestingPageTest_UI@4ef37659</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_contactus_test.TC_Contactus_005_verifyChooseFileAndSubmitDisplayed()'><b>TC_Contactus_005_verifyChooseFileAndSubmitDisplayed</b><br>Test class: com.ecom.tests.UI_contactus_test</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.UI_contactus_test@2892dae4</td></tr>
+<tr>
+<td title='com.ecom.tests.RegisterPageTest_Functional.verifySignup()'><b>verifySignup</b><br>Test class: com.ecom.tests.RegisterPageTest_Functional<br>Parameters: Test user c, kavi18177@example.com</td>
+<td></td>
+<td>2</td>
+<td>com.ecom.tests.RegisterPageTest_Functional@3541cb24</td></tr>
+<tr>
+<td title='com.ecom.tests.ContactUsPageTest_Functional.verifyEmailEmpty()'><b>verifyEmailEmpty</b><br>Test class: com.ecom.tests.ContactUsPageTest_Functional<br>Parameters: kaviya, Review, Cant able to view review product</td>
+<td></td>
+<td>1</td>
+<td>com.ecom.tests.ContactUsPageTest_Functional@5939a379</td></tr>
+<tr>
+<td title='com.ecom.tests.CartPageTest_UI.verifyProceedtoCheckout()'><b>verifyProceedtoCheckout</b><br>Test class: com.ecom.tests.CartPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.CartPageTest_UI@5136d012</td></tr>
+<tr>
+<td title='com.ecom.tests.RegisterPageTest_Functional.enterState()'><b>enterState</b><br>Test class: com.ecom.tests.RegisterPageTest_Functional<br>Parameters: Tamil Nadu</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.RegisterPageTest_Functional@3541cb24</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_contactus_test.TC_Contact_022_verifySubjectFieldWithData()'><b>TC_Contact_022_verifySubjectFieldWithData</b><br>Test class: com.ecom.tests.UI_contactus_test</td>
+<td></td>
+<td>1</td>
+<td>com.ecom.tests.UI_contactus_test@2892dae4</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_HomePageTest.verifyVideoTutorialsButtonIsVisibleAndNavigatesAndReturns()'><b>verifyVideoTutorialsButtonIsVisibleAndNavigatesAndReturns</b><br>Test class: com.ecom.tests.UI_HomePageTest</td>
+<td></td>
+<td>9</td>
+<td>com.ecom.tests.UI_HomePageTest@355ce81c</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_contactus_test.TC_Contactus_007_verifyTestCasesBtnDisplayed()'><b>TC_Contactus_007_verifyTestCasesBtnDisplayed</b><br>Test class: com.ecom.tests.UI_contactus_test</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.UI_contactus_test@2892dae4</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_contactus_test.TC_Contact_017_verifySubjectFieldDisplayed()'><b>TC_Contact_017_verifySubjectFieldDisplayed</b><br>Test class: com.ecom.tests.UI_contactus_test</td>
+<td></td>
+<td>1</td>
+<td>com.ecom.tests.UI_contactus_test@2892dae4</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_Functional.verifyURLLoad()'><b>verifyURLLoad</b><br>Test class: com.ecom.tests.TestCasesPageTest_Functional</td>
+<td></td>
+<td>1</td>
+<td>com.ecom.tests.TestCasesPageTest_Functional@40cb8df7</td></tr>
+<tr>
+<td title='com.ecom.tests.ProductPageTest_Functional.verifyProductName()'><b>verifyProductName</b><br>Test class: com.ecom.tests.ProductPageTest_Functional</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.ProductPageTest_Functional@52102734</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifyFeedbackSectionDisplayed()'><b>verifyFeedbackSectionDisplayed</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.CartPageTest_UI.verifySubscriptionInvalid()'><b>verifySubscriptionInvalid</b><br>Test class: com.ecom.tests.CartPageTest_UI<br>Parameters: kaviyaGma.com</td>
+<td></td>
+<td>2</td>
+<td>com.ecom.tests.CartPageTest_UI@5136d012</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_HomePageTest.verifyScrollToTopArrowFunctionality()'><b>verifyScrollToTopArrowFunctionality</b><br>Test class: com.ecom.tests.UI_HomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.ecom.tests.UI_HomePageTest@355ce81c</td></tr>
+<tr>
+<td title='com.ecom.tests.APITestingPageTest_UI.verifyApiTestingIconDisplayed()'><b>verifyApiTestingIconDisplayed</b><br>Test class: com.ecom.tests.APITestingPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.APITestingPageTest_UI@4ef37659</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_Functional.verifyFeedbackEmailPresence()'><b>verifyFeedbackEmailPresence</b><br>Test class: com.ecom.tests.TestCasesPageTest_Functional</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_Functional@40cb8df7</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifyTestCase15LinkDisplayed()'><b>verifyTestCase15LinkDisplayed</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.login_functionality_tests.Tc_Ecom_Login_01_verifyUrlLaunch()'><b>Tc_Ecom_Login_01_verifyUrlLaunch</b><br>Test class: com.ecom.tests.login_functionality_tests</td>
+<td></td>
+<td>2</td>
+<td>com.ecom.tests.login_functionality_tests@e1de817</td></tr>
+<tr>
+<td title='com.ecom.tests.RegisterPageTest_Functional.selectNewsletterTest()'><b>selectNewsletterTest</b><br>Test class: com.ecom.tests.RegisterPageTest_Functional</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.RegisterPageTest_Functional@3541cb24</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_Functional.verifyTestCasesButtonAvailability()'><b>verifyTestCasesButtonAvailability</b><br>Test class: com.ecom.tests.TestCasesPageTest_Functional</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_Functional@40cb8df7</td></tr>
+<tr>
+<td title='com.ecom.tests.RegisterPageTest_Functional.verifySignupLoginButtonAvailability()'><b>verifySignupLoginButtonAvailability</b><br>Test class: com.ecom.tests.RegisterPageTest_Functional</td>
+<td></td>
+<td>1</td>
+<td>com.ecom.tests.RegisterPageTest_Functional@3541cb24</td></tr>
+<tr>
+<td title='com.ecom.tests.APITestingPageTest_UI.verifyCartIconDisplayed()'><b>verifyCartIconDisplayed</b><br>Test class: com.ecom.tests.APITestingPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.APITestingPageTest_UI@4ef37659</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_contactus_test.TC_Contact_011_verifySubscriptionIconDisplayed()'><b>TC_Contact_011_verifySubscriptionIconDisplayed</b><br>Test class: com.ecom.tests.UI_contactus_test</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.UI_contactus_test@2892dae4</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_LoginPageTest.verifySignupEdgeCases()'><b>verifySignupEdgeCases</b><br>Test class: com.ecom.tests.UI_LoginPageTest<br>Parameters: Keerthana V S, , ValidNameNoEmail</td>
+<td></td>
+<td>12</td>
+<td>com.ecom.tests.UI_LoginPageTest@29647f75</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_ProductPageTest.verifyAddProductIcon()'><b>verifyAddProductIcon</b><br>Test class: com.ecom.tests.UI_ProductPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.UI_ProductPageTest@3315d2d7</td></tr>
+<tr>
+<td title='com.ecom.tests.ContactUsPageTest_Functional.enterMessage()'><b>enterMessage</b><br>Test class: com.ecom.tests.ContactUsPageTest_Functional<br>Parameters: I want to know about products.</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.ContactUsPageTest_Functional@5939a379</td></tr>
+<tr>
+<td title='com.ecom.tests.RegisterPageTest_Functional.verifyBrowserLaunch()'><b>verifyBrowserLaunch</b><br>Test class: com.ecom.tests.RegisterPageTest_Functional</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.RegisterPageTest_Functional@3541cb24</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifyTestCase1LinkDisplayed()'><b>verifyTestCase1LinkDisplayed</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_HomePageTest.verifyBrandsSectionIsVisible()'><b>verifyBrandsSectionIsVisible</b><br>Test class: com.ecom.tests.UI_HomePageTest</td>
+<td></td>
+<td>1</td>
+<td>com.ecom.tests.UI_HomePageTest@355ce81c</td></tr>
+<tr>
+<td title='com.ecom.tests.ProductPageTest_Functional.verifyProductBrand()'><b>verifyProductBrand</b><br>Test class: com.ecom.tests.ProductPageTest_Functional</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.ProductPageTest_Functional@52102734</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_HomePageTest.verifyProductsButtonIsVisibleAndNavigates()'><b>verifyProductsButtonIsVisibleAndNavigates</b><br>Test class: com.ecom.tests.UI_HomePageTest</td>
+<td></td>
+<td>3</td>
+<td>com.ecom.tests.UI_HomePageTest@355ce81c</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_LoginPageTest.verifyLoginEdgeCases()'><b>verifyLoginEdgeCases</b><br>Test class: com.ecom.tests.UI_LoginPageTest<br>Parameters: , Keerthi@123, BlankEmailValidPassword</td>
+<td></td>
+<td>33</td>
+<td>com.ecom.tests.UI_LoginPageTest@29647f75</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_LoginPageTest.verifySubscriptionIconIsVisibleOnSignupLoginPage()'><b>verifySubscriptionIconIsVisibleOnSignupLoginPage</b><br>Test class: com.ecom.tests.UI_LoginPageTest</td>
+<td></td>
+<td>11</td>
+<td>com.ecom.tests.UI_LoginPageTest@29647f75</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_HomePageTest.verifyCategorySectionIsVisible()'><b>verifyCategorySectionIsVisible</b><br>Test class: com.ecom.tests.UI_HomePageTest</td>
+<td></td>
+<td>1</td>
+<td>com.ecom.tests.UI_HomePageTest@355ce81c</td></tr>
+<tr>
+<td title='com.ecom.tests.APITestingPageTest_UI.verifyFeedbackEmailDisplayed()'><b>verifyFeedbackEmailDisplayed</b><br>Test class: com.ecom.tests.APITestingPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.APITestingPageTest_UI@4ef37659</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_ProductPageTest.verifySearchProductsSection()'><b>verifySearchProductsSection</b><br>Test class: com.ecom.tests.UI_ProductPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.UI_ProductPageTest@3315d2d7</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_HomePageTest.verifyRecommendedItemsSectionIsVisible()'><b>verifyRecommendedItemsSectionIsVisible</b><br>Test class: com.ecom.tests.UI_HomePageTest</td>
+<td></td>
+<td>2</td>
+<td>com.ecom.tests.UI_HomePageTest@355ce81c</td></tr>
+<tr>
+<td title='com.ecom.tests.CartPageTest_Functional.TC_ECOM_Cart_012()'><b>TC_ECOM_Cart_012</b><br>Test class: com.ecom.tests.CartPageTest_Functional</td>
+<td></td>
+<td>1</td>
+<td>com.ecom.tests.CartPageTest_Functional@2beee7ff</td></tr>
+<tr>
+<td title='com.ecom.tests.RegisterPageTest_Functional.clickCreateAccountButton()'><b>clickCreateAccountButton</b><br>Test class: com.ecom.tests.RegisterPageTest_Functional</td>
+<td></td>
+<td>2</td>
+<td>com.ecom.tests.RegisterPageTest_Functional@3541cb24</td></tr>
+<tr>
+<td title='com.ecom.tests.login_functionality_tests.Tc_Ecom_Login_08_invalidEmailValidPassword()'><b>Tc_Ecom_Login_08_invalidEmailValidPassword</b><br>Test class: com.ecom.tests.login_functionality_tests</td>
+<td></td>
+<td>1</td>
+<td>com.ecom.tests.login_functionality_tests@e1de817</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifyLogoDisplayed()'><b>verifyLogoDisplayed</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI</td>
+<td></td>
+<td>1</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_LoginPageTest.verifyLoginEdgeCases()'><b>verifyLoginEdgeCases</b><br>Test class: com.ecom.tests.UI_LoginPageTest<br>Parameters: keerthanavs@gmail.com, Keerthi123, InvalidEmailInvalidPassword</td>
+<td></td>
+<td>23</td>
+<td>com.ecom.tests.UI_LoginPageTest@29647f75</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_LoginPageTest.verifyLoginEdgeCases()'><b>verifyLoginEdgeCases</b><br>Test class: com.ecom.tests.UI_LoginPageTest<br>Parameters: keerthanavs12@gmail.com, Keerthi123, ValidEmailInvalidPassword</td>
+<td></td>
+<td>22</td>
+<td>com.ecom.tests.UI_LoginPageTest@29647f75</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_LoginPageTest.verifySignupLoginPageLabels()'><b>verifySignupLoginPageLabels</b><br>Test class: com.ecom.tests.UI_LoginPageTest</td>
+<td></td>
+<td>11</td>
+<td>com.ecom.tests.UI_LoginPageTest@29647f75</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_contactus_test.TC_Contact_024_verifyChooseFileButton()'><b>TC_Contact_024_verifyChooseFileButton</b><br>Test class: com.ecom.tests.UI_contactus_test</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.UI_contactus_test@2892dae4</td></tr>
+<tr>
+<td title='com.ecom.tests.RegisterPageTest_Functional.verifyAddressHeading()'><b>verifyAddressHeading</b><br>Test class: com.ecom.tests.RegisterPageTest_Functional</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.RegisterPageTest_Functional@3541cb24</td></tr>
+<tr>
+<td title='com.ecom.tests.APITestingPageTest_UI.verifyApiList6LinkDisplayed()'><b>verifyApiList6LinkDisplayed</b><br>Test class: com.ecom.tests.APITestingPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.APITestingPageTest_UI@4ef37659</td></tr>
+<tr>
+<td title='com.ecom.tests.ProductPageTest_Functional.verifyProductDetail()'><b>verifyProductDetail</b><br>Test class: com.ecom.tests.ProductPageTest_Functional</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.ProductPageTest_Functional@52102734</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_contactus_test.TC_Contact_020_verifyEmailFieldWithValidData()'><b>TC_Contact_020_verifyEmailFieldWithValidData</b><br>Test class: com.ecom.tests.UI_contactus_test</td>
+<td></td>
+<td>1</td>
+<td>com.ecom.tests.UI_contactus_test@2892dae4</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_LoginPageTest.verifyLoginButtonIsVisibleOnSignupLoginPage()'><b>verifyLoginButtonIsVisibleOnSignupLoginPage</b><br>Test class: com.ecom.tests.UI_LoginPageTest</td>
+<td></td>
+<td>40</td>
+<td>com.ecom.tests.UI_LoginPageTest@29647f75</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_ProductPageTest.verifyLogoDisplayed()'><b>verifyLogoDisplayed</b><br>Test class: com.ecom.tests.UI_ProductPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.ecom.tests.UI_ProductPageTest@3315d2d7</td></tr>
+<tr>
+<td title='com.ecom.tests.CartPageTest_UI.verifyContactUsIconDisplayed()'><b>verifyContactUsIconDisplayed</b><br>Test class: com.ecom.tests.CartPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.CartPageTest_UI@5136d012</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_ProductPageTest.verifySubscriptionEmpty()'><b>verifySubscriptionEmpty</b><br>Test class: com.ecom.tests.UI_ProductPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.UI_ProductPageTest@3315d2d7</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_Functional.verifyHyperlinksPresence()'><b>verifyHyperlinksPresence</b><br>Test class: com.ecom.tests.TestCasesPageTest_Functional</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_Functional@40cb8df7</td></tr>
+<tr>
+<td title='com.ecom.tests.CartPageTest_UI.verifySubscriptionValid()'><b>verifySubscriptionValid</b><br>Test class: com.ecom.tests.CartPageTest_UI<br>Parameters: kaviya@gmail.com</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.CartPageTest_UI@5136d012</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_HomePageTest.verifyFeaturedItemsSectionIsVisible()'><b>verifyFeaturedItemsSectionIsVisible</b><br>Test class: com.ecom.tests.UI_HomePageTest</td>
+<td></td>
+<td>1</td>
+<td>com.ecom.tests.UI_HomePageTest@355ce81c</td></tr>
+<tr>
+<td title='com.ecom.tests.RegisterPageTest_Functional.verifyHomePageVisibility()'><b>verifyHomePageVisibility</b><br>Test class: com.ecom.tests.RegisterPageTest_Functional</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.RegisterPageTest_Functional@3541cb24</td></tr>
+<tr>
+<td title='com.ecom.tests.APITestingPageTest_UI.verifyApiList12LinkDisplayed()'><b>verifyApiList12LinkDisplayed</b><br>Test class: com.ecom.tests.APITestingPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.APITestingPageTest_UI@4ef37659</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifyHomeIconDisplayed()'><b>verifyHomeIconDisplayed</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_Functional.verifyNavigationToTestCasesPage()'><b>verifyNavigationToTestCasesPage</b><br>Test class: com.ecom.tests.TestCasesPageTest_Functional</td>
+<td></td>
+<td>1</td>
+<td>com.ecom.tests.TestCasesPageTest_Functional@40cb8df7</td></tr>
+<tr>
+<td title='com.ecom.tests.APITestingPageTest_UI.verifySubscriptionIconVisible()'><b>verifySubscriptionIconVisible</b><br>Test class: com.ecom.tests.APITestingPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.APITestingPageTest_UI@4ef37659</td></tr>
+<tr>
+<td title='com.ecom.tests.APITestingPageTest_UI.verifyApiList14LinkDisplayed()'><b>verifyApiList14LinkDisplayed</b><br>Test class: com.ecom.tests.APITestingPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.APITestingPageTest_UI@4ef37659</td></tr>
+<tr>
+<td title='com.ecom.tests.SubscriptionHomePageTest_Functional.verifySubscriptionIconVisible()'><b>verifySubscriptionIconVisible</b><br>Test class: com.ecom.tests.SubscriptionHomePageTest_Functional</td>
+<td></td>
+<td>2</td>
+<td>com.ecom.tests.SubscriptionHomePageTest_Functional@2177849e</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_LoginPageTest.verifySignupButtonPresence()'><b>verifySignupButtonPresence</b><br>Test class: com.ecom.tests.UI_LoginPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.ecom.tests.UI_LoginPageTest@29647f75</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_ProductPageTest.verifyHomeIconDisplayed()'><b>verifyHomeIconDisplayed</b><br>Test class: com.ecom.tests.UI_ProductPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.UI_ProductPageTest@3315d2d7</td></tr>
+<tr>
+<td title='com.ecom.tests.RegisterPageTest_Functional.verifyExistSignup()'><b>verifyExistSignup</b><br>Test class: com.ecom.tests.RegisterPageTest_Functional<br>Parameters: Test user c, kaviya@gmail.com</td>
+<td></td>
+<td>2</td>
+<td>com.ecom.tests.RegisterPageTest_Functional@3541cb24</td></tr>
+<tr>
+<td title='com.ecom.tests.CartPageTest_UI.verifyApiTestingIconDisplayed()'><b>verifyApiTestingIconDisplayed</b><br>Test class: com.ecom.tests.CartPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.CartPageTest_UI@5136d012</td></tr>
+<tr>
+<td title='com.ecom.tests.APITestingPageTest_UI.verifyApiList7LinkDisplayed()'><b>verifyApiList7LinkDisplayed</b><br>Test class: com.ecom.tests.APITestingPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.APITestingPageTest_UI@4ef37659</td></tr>
+<tr>
+<td title='com.ecom.tests.APITestingPageTest_UI.verifyApiList1LinkDisplayed()'><b>verifyApiList1LinkDisplayed</b><br>Test class: com.ecom.tests.APITestingPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.APITestingPageTest_UI@4ef37659</td></tr>
+<tr>
+<td title='com.ecom.tests.CartPageTest_UI.verifyVideoTutorialsIconDisplayed()'><b>verifyVideoTutorialsIconDisplayed</b><br>Test class: com.ecom.tests.CartPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.CartPageTest_UI@5136d012</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifyContactUsIconDisplayed()'><b>verifyContactUsIconDisplayed</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.SubscriptionHomePageTest_Functional.verifySubscriptionInvalid()'><b>verifySubscriptionInvalid</b><br>Test class: com.ecom.tests.SubscriptionHomePageTest_Functional<br>Parameters: kaviyaGma.com</td>
+<td></td>
+<td>2</td>
+<td>com.ecom.tests.SubscriptionHomePageTest_Functional@2177849e</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifyTestCase12LinkDisplayed()'><b>verifyTestCase12LinkDisplayed</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.login_functionality_tests.Tc_Ecom_Login_02_verifyHomePageDisplayed()'><b>Tc_Ecom_Login_02_verifyHomePageDisplayed</b><br>Test class: com.ecom.tests.login_functionality_tests</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.login_functionality_tests@e1de817</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_ProductPageTest.verifyBrandsSection()'><b>verifyBrandsSection</b><br>Test class: com.ecom.tests.UI_ProductPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.UI_ProductPageTest@3315d2d7</td></tr>
+<tr>
+<td title='com.ecom.tests.CartPageTest_Functional.TC_ECOM_Cart_005()'><b>TC_ECOM_Cart_005</b><br>Test class: com.ecom.tests.CartPageTest_Functional</td>
+<td></td>
+<td>4</td>
+<td>com.ecom.tests.CartPageTest_Functional@2beee7ff</td></tr>
+<tr>
+<td title='com.ecom.tests.CartPageTest_UI.verifyLogoDisplayed()'><b>verifyLogoDisplayed</b><br>Test class: com.ecom.tests.CartPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.CartPageTest_UI@5136d012</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_HomePageTest.verifySubscriptionScenarios()'><b>verifySubscriptionScenarios</b><br>Test class: com.ecom.tests.UI_HomePageTest<br>Parameters: keerthi@gmail.com, duplicate</td>
+<td></td>
+<td>2</td>
+<td>com.ecom.tests.UI_HomePageTest@355ce81c</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_LoginPageTest.verifyLoginEdgeCases()'><b>verifyLoginEdgeCases</b><br>Test class: com.ecom.tests.UI_LoginPageTest<br>Parameters: keerthanavs12@gmail.com, , ValidEmailBlankPassword</td>
+<td></td>
+<td>32</td>
+<td>com.ecom.tests.UI_LoginPageTest@29647f75</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_ProductPageTest.verifyTestCasesDisplayed()'><b>verifyTestCasesDisplayed</b><br>Test class: com.ecom.tests.UI_ProductPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.UI_ProductPageTest@3315d2d7</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_Functional.verifyTestCasesPageTitle()'><b>verifyTestCasesPageTitle</b><br>Test class: com.ecom.tests.TestCasesPageTest_Functional</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_Functional@40cb8df7</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_contactus_test.TC_Contactus_002_verifyLogoDisplayed()'><b>TC_Contactus_002_verifyLogoDisplayed</b><br>Test class: com.ecom.tests.UI_contactus_test</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.UI_contactus_test@2892dae4</td></tr>
+<tr>
+<td title='com.ecom.tests.APITestingPageTest_UI.verifyScrollToTopButton()'><b>verifyScrollToTopButton</b><br>Test class: com.ecom.tests.APITestingPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.APITestingPageTest_UI@4ef37659</td></tr>
+<tr>
+<td title='com.ecom.tests.APITestingPageTest_UI.verifyProductsIconDisplayed()'><b>verifyProductsIconDisplayed</b><br>Test class: com.ecom.tests.APITestingPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.APITestingPageTest_UI@4ef37659</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_HomePageTest.verifyAutomationEngineerLogoIsVisible()'><b>verifyAutomationEngineerLogoIsVisible</b><br>Test class: com.ecom.tests.UI_HomePageTest</td>
+<td></td>
+<td>2</td>
+<td>com.ecom.tests.UI_HomePageTest@355ce81c</td></tr>
+<tr>
+<td title='com.ecom.tests.APITestingPageTest_UI.verifyApiList8LinkDisplayed()'><b>verifyApiList8LinkDisplayed</b><br>Test class: com.ecom.tests.APITestingPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.APITestingPageTest_UI@4ef37659</td></tr>
+<tr>
+<td title='com.ecom.tests.ContactUsPageTest_Functional.enterName()'><b>enterName</b><br>Test class: com.ecom.tests.ContactUsPageTest_Functional<br>Parameters: Kaviya</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.ContactUsPageTest_Functional@5939a379</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_contactus_test.TC_Contact_012_verifySubscriptionWithInvalidEmail()'><b>TC_Contact_012_verifySubscriptionWithInvalidEmail</b><br>Test class: com.ecom.tests.UI_contactus_test</td>
+<td></td>
+<td>1</td>
+<td>com.ecom.tests.UI_contactus_test@2892dae4</td></tr>
+<tr>
+<td title='com.ecom.tests.ProductPageTest_Functional.verifyProductCategory()'><b>verifyProductCategory</b><br>Test class: com.ecom.tests.ProductPageTest_Functional</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.ProductPageTest_Functional@52102734</td></tr>
+<tr>
+<td title='com.ecom.tests.CartPageTest_UI.verifyEmptyCartHereLink()'><b>verifyEmptyCartHereLink</b><br>Test class: com.ecom.tests.CartPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.CartPageTest_UI@5136d012</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_LoginPageTest.verifyValidLogin()'><b>verifyValidLogin</b><br>Test class: com.ecom.tests.UI_LoginPageTest<br>Parameters: keerthanavs12@gmail.com, Keerthi@123, ValidLogin</td>
+<td></td>
+<td>17</td>
+<td>com.ecom.tests.UI_LoginPageTest@29647f75</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifyFeedbackEmailDisplayed()'><b>verifyFeedbackEmailDisplayed</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifyTestCase22LinkDisplayed()'><b>verifyTestCase22LinkDisplayed</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_LoginPageTest.verifyNavigationIconsOnSignupLoginPage()'><b>verifyNavigationIconsOnSignupLoginPage</b><br>Test class: com.ecom.tests.UI_LoginPageTest</td>
+<td></td>
+<td>11</td>
+<td>com.ecom.tests.UI_LoginPageTest@29647f75</td></tr>
+<tr>
+<td title='com.ecom.tests.APITestingPageTest_UI.verifyApiList13LinkDisplayed()'><b>verifyApiList13LinkDisplayed</b><br>Test class: com.ecom.tests.APITestingPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.APITestingPageTest_UI@4ef37659</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_Functional.verifyFeedbackSectionPresence()'><b>verifyFeedbackSectionPresence</b><br>Test class: com.ecom.tests.TestCasesPageTest_Functional</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_Functional@40cb8df7</td></tr>
+<tr>
+<td title='com.ecom.tests.ProductPageTest_Functional.verifyBrowserLaunch()'><b>verifyBrowserLaunch</b><br>Test class: com.ecom.tests.ProductPageTest_Functional</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.ProductPageTest_Functional@52102734</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifyTestCase13LinkDisplayed()'><b>verifyTestCase13LinkDisplayed</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.login_functionality_tests.Tc_Ecom_Login_07_validEmailInvalidPassword()'><b>Tc_Ecom_Login_07_validEmailInvalidPassword</b><br>Test class: com.ecom.tests.login_functionality_tests</td>
+<td></td>
+<td>3</td>
+<td>com.ecom.tests.login_functionality_tests@e1de817</td></tr>
+<tr>
+<td title='com.ecom.tests.ContactUsPageTest_Functional.uploadFile()'><b>uploadFile</b><br>Test class: com.ecom.tests.ContactUsPageTest_Functional</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.ContactUsPageTest_Functional@5939a379</td></tr>
+<tr>
+<td title='com.ecom.tests.ProductPageTest_Functional.verifySubscriptionEmpty()'><b>verifySubscriptionEmpty</b><br>Test class: com.ecom.tests.ProductPageTest_Functional</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.ProductPageTest_Functional@52102734</td></tr>
+<tr>
+<td title='com.ecom.tests.ContactUsPageTest_Functional.verifyNavigationBackToHome()'><b>verifyNavigationBackToHome</b><br>Test class: com.ecom.tests.ContactUsPageTest_Functional</td>
+<td></td>
+<td>3</td>
+<td>com.ecom.tests.ContactUsPageTest_Functional@5939a379</td></tr>
+<tr>
+<td title='com.ecom.tests.ContactUsPageTest_Functional.verifyEmailInvalid()'><b>verifyEmailInvalid</b><br>Test class: com.ecom.tests.ContactUsPageTest_Functional<br>Parameters: kaviya, kaviya.com, Review, Cant able to view review product</td>
+<td></td>
+<td>1</td>
+<td>com.ecom.tests.ContactUsPageTest_Functional@5939a379</td></tr>
+<tr>
+<td title='com.ecom.tests.CartPageTest_UI.verifyHomeIconDisplayed()'><b>verifyHomeIconDisplayed</b><br>Test class: com.ecom.tests.CartPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.CartPageTest_UI@5136d012</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifyTestCase26LinkDisplayed()'><b>verifyTestCase26LinkDisplayed</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifyTestCase25LinkDisplayed()'><b>verifyTestCase25LinkDisplayed</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.SubscriptionHomePageTest_Functional.verifySubscriptionEmpty()'><b>verifySubscriptionEmpty</b><br>Test class: com.ecom.tests.SubscriptionHomePageTest_Functional</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.SubscriptionHomePageTest_Functional@2177849e</td></tr>
+<tr>
+<td title='com.ecom.tests.ProductPageTest_Functional.verifyScrollToTopButton()'><b>verifyScrollToTopButton</b><br>Test class: com.ecom.tests.ProductPageTest_Functional</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.ProductPageTest_Functional@52102734</td></tr>
+<tr>
+<td title='com.ecom.tests.login_functionality_tests.Tc_Ecom_Login_9_blankEmailAndPassword()'><b>Tc_Ecom_Login_9_blankEmailAndPassword</b><br>Test class: com.ecom.tests.login_functionality_tests</td>
+<td></td>
+<td>14</td>
+<td>com.ecom.tests.login_functionality_tests@e1de817</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_contactus_test.TC_Contactus_001_verifyGetInTouchHeader()'><b>TC_Contactus_001_verifyGetInTouchHeader</b><br>Test class: com.ecom.tests.UI_contactus_test</td>
+<td></td>
+<td>1</td>
+<td>com.ecom.tests.UI_contactus_test@2892dae4</td></tr>
+<tr>
+<td title='com.ecom.tests.APITestingPageTest_UI.verifyApiList9LinkDisplayed()'><b>verifyApiList9LinkDisplayed</b><br>Test class: com.ecom.tests.APITestingPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.APITestingPageTest_UI@4ef37659</td></tr>
+<tr>
+<td title='com.ecom.tests.APITestingPageTest_UI.verifyFeedbackSectionDisplayed()'><b>verifyFeedbackSectionDisplayed</b><br>Test class: com.ecom.tests.APITestingPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.APITestingPageTest_UI@4ef37659</td></tr>
+<tr>
+<td title='com.ecom.tests.APITestingPageTest_UI.verifyApilistSectionDisplayed()'><b>verifyApilistSectionDisplayed</b><br>Test class: com.ecom.tests.APITestingPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.APITestingPageTest_UI@4ef37659</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_contactus_test.TC_Contactus_004_verifyFormFieldsDisplayed()'><b>TC_Contactus_004_verifyFormFieldsDisplayed</b><br>Test class: com.ecom.tests.UI_contactus_test</td>
+<td></td>
+<td>2</td>
+<td>com.ecom.tests.UI_contactus_test@2892dae4</td></tr>
+<tr>
+<td title='com.ecom.tests.RegisterPageTest_Functional.enterCity()'><b>enterCity</b><br>Test class: com.ecom.tests.RegisterPageTest_Functional<br>Parameters: Chennai</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.RegisterPageTest_Functional@3541cb24</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_HomePageTest.verifySubscriptionScenarios()'><b>verifySubscriptionScenarios</b><br>Test class: com.ecom.tests.UI_HomePageTest<br>Parameters: keerthigmail.com, invalid</td>
+<td></td>
+<td>2</td>
+<td>com.ecom.tests.UI_HomePageTest@355ce81c</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_Functional.verifyHomePageVisibility()'><b>verifyHomePageVisibility</b><br>Test class: com.ecom.tests.TestCasesPageTest_Functional</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_Functional@40cb8df7</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_contactus_test.TC_Contact_014_verifyGetInTouchHeader()'><b>TC_Contact_014_verifyGetInTouchHeader</b><br>Test class: com.ecom.tests.UI_contactus_test</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.UI_contactus_test@2892dae4</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_Functional.verifyScrollBarFunctionality()'><b>verifyScrollBarFunctionality</b><br>Test class: com.ecom.tests.TestCasesPageTest_Functional</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_Functional@40cb8df7</td></tr>
+<tr>
+<td title='com.ecom.tests.ContactUsPageTest_Functional.verifyContactUsIcon()'><b>verifyContactUsIcon</b><br>Test class: com.ecom.tests.ContactUsPageTest_Functional</td>
+<td></td>
+<td>1</td>
+<td>com.ecom.tests.ContactUsPageTest_Functional@5939a379</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifyTestCase19LinkDisplayed()'><b>verifyTestCase19LinkDisplayed</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.APITestingPageTest_UI.verifySubscriptionEmpty()'><b>verifySubscriptionEmpty</b><br>Test class: com.ecom.tests.APITestingPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.APITestingPageTest_UI@4ef37659</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_HomePageTest.verifySubscriptionIconIsVisibleOnHomePage()'><b>verifySubscriptionIconIsVisibleOnHomePage</b><br>Test class: com.ecom.tests.UI_HomePageTest</td>
+<td></td>
+<td>4</td>
+<td>com.ecom.tests.UI_HomePageTest@355ce81c</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifyTestCase21LinkDisplayed()'><b>verifyTestCase21LinkDisplayed</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifyTestCase18LinkDisplayed()'><b>verifyTestCase18LinkDisplayed</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_Functional.verifySubscriptionInvalid()'><b>verifySubscriptionInvalid</b><br>Test class: com.ecom.tests.TestCasesPageTest_Functional<br>Parameters: keerthi12gmail.com</td>
+<td></td>
+<td>2</td>
+<td>com.ecom.tests.TestCasesPageTest_Functional@40cb8df7</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifySubscriptionIconVisible()'><b>verifySubscriptionIconVisible</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_ProductPageTest.verifySubscriptionIconVisible()'><b>verifySubscriptionIconVisible</b><br>Test class: com.ecom.tests.UI_ProductPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.UI_ProductPageTest@3315d2d7</td></tr>
+<tr>
+<td title='com.ecom.tests.login_functionality_tests.Tc_Ecom_Login_05_validCredentialsEntry()'><b>Tc_Ecom_Login_05_validCredentialsEntry</b><br>Test class: com.ecom.tests.login_functionality_tests</td>
+<td></td>
+<td>1</td>
+<td>com.ecom.tests.login_functionality_tests@e1de817</td></tr>
+<tr>
+<td title='com.ecom.tests.APITestingPageTest_UI.verifyHomeIconDisplayed()'><b>verifyHomeIconDisplayed</b><br>Test class: com.ecom.tests.APITestingPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.APITestingPageTest_UI@4ef37659</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_HomePageTest.verifyCartButtonIsVisibleAndNavigates()'><b>verifyCartButtonIsVisibleAndNavigates</b><br>Test class: com.ecom.tests.UI_HomePageTest</td>
+<td></td>
+<td>2</td>
+<td>com.ecom.tests.UI_HomePageTest@355ce81c</td></tr>
+<tr>
+<td title='com.ecom.tests.RegisterPageTest_Functional.verifySignuptoCreateAccount()'><b>verifySignuptoCreateAccount</b><br>Test class: com.ecom.tests.RegisterPageTest_Functional</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.RegisterPageTest_Functional@3541cb24</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifyProductsIconDisplayed()'><b>verifyProductsIconDisplayed</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_contactus_test.TC_Contact_025_verifySubmitButton()'><b>TC_Contact_025_verifySubmitButton</b><br>Test class: com.ecom.tests.UI_contactus_test</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.UI_contactus_test@2892dae4</td></tr>
+<tr>
+<td title='com.ecom.tests.CartPageTest_Functional.TC_ECOM_Cart_011()'><b>TC_ECOM_Cart_011</b><br>Test class: com.ecom.tests.CartPageTest_Functional</td>
+<td></td>
+<td>3</td>
+<td>com.ecom.tests.CartPageTest_Functional@2beee7ff</td></tr>
+<tr>
+<td title='com.ecom.tests.TestCasesPageTest_UI.verifyTestCase17LinkDisplayed()'><b>verifyTestCase17LinkDisplayed</b><br>Test class: com.ecom.tests.TestCasesPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.TestCasesPageTest_UI@13b13b5d</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_contactus_test.TC_Contact_026_verifyContactUsSectionVisible()'><b>TC_Contact_026_verifyContactUsSectionVisible</b><br>Test class: com.ecom.tests.UI_contactus_test</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.UI_contactus_test@2892dae4</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_contactus_test.TC_Contact_018_verifyMessageFieldDisplayed()'><b>TC_Contact_018_verifyMessageFieldDisplayed</b><br>Test class: com.ecom.tests.UI_contactus_test</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.UI_contactus_test@2892dae4</td></tr>
+<tr>
+<td title='com.ecom.tests.ProductPageTest_Functional.verifySubscriptionInvalid()'><b>verifySubscriptionInvalid</b><br>Test class: com.ecom.tests.ProductPageTest_Functional<br>Parameters: kaviyaGma.com</td>
+<td></td>
+<td>2</td>
+<td>com.ecom.tests.ProductPageTest_Functional@52102734</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_contactus_test.TC_Contact_016_verifyEmailFieldDisplayed()'><b>TC_Contact_016_verifyEmailFieldDisplayed</b><br>Test class: com.ecom.tests.UI_contactus_test</td>
+<td></td>
+<td>2</td>
+<td>com.ecom.tests.UI_contactus_test@2892dae4</td></tr>
+<tr>
+<td title='com.ecom.tests.APITestingPageTest_UI.verifyLogoDisplayed()'><b>verifyLogoDisplayed</b><br>Test class: com.ecom.tests.APITestingPageTest_UI</td>
+<td></td>
+<td>1</td>
+<td>com.ecom.tests.APITestingPageTest_UI@4ef37659</td></tr>
+<tr>
+<td title='com.ecom.tests.RegisterPageTest_Functional.enterFirstName()'><b>enterFirstName</b><br>Test class: com.ecom.tests.RegisterPageTest_Functional<br>Parameters: Kaviya</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.RegisterPageTest_Functional@3541cb24</td></tr>
+<tr>
+<td title='com.ecom.tests.RegisterPageTest_Functional.selectDateOfBirthTest()'><b>selectDateOfBirthTest</b><br>Test class: com.ecom.tests.RegisterPageTest_Functional<br>Parameters: 18, March, 2006</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.RegisterPageTest_Functional@3541cb24</td></tr>
+<tr>
+<td title='com.ecom.tests.CartPageTest_Functional.TC_ECOM_Cart_006()'><b>TC_ECOM_Cart_006</b><br>Test class: com.ecom.tests.CartPageTest_Functional</td>
+<td></td>
+<td>26</td>
+<td>com.ecom.tests.CartPageTest_Functional@2beee7ff</td></tr>
+<tr>
+<td title='com.ecom.tests.CartPageTest_Functional.TC_ECOM_Cart_009()'><b>TC_ECOM_Cart_009</b><br>Test class: com.ecom.tests.CartPageTest_Functional</td>
+<td></td>
+<td>1</td>
+<td>com.ecom.tests.CartPageTest_Functional@2beee7ff</td></tr>
+<tr>
+<td title='com.ecom.tests.ProductPageTest_Functional.verifyContactUsIcon()'><b>verifyContactUsIcon</b><br>Test class: com.ecom.tests.ProductPageTest_Functional</td>
+<td></td>
+<td>2</td>
+<td>com.ecom.tests.ProductPageTest_Functional@52102734</td></tr>
+<tr>
+<td title='com.ecom.tests.ProductPageTest_Functional.verifyWriteYourReview()'><b>verifyWriteYourReview</b><br>Test class: com.ecom.tests.ProductPageTest_Functional<br>Parameters: TestUser1 , test1@example.com, This is my first review.</td>
+<td></td>
+<td>1</td>
+<td>com.ecom.tests.ProductPageTest_Functional@52102734</td></tr>
+<tr>
+<td title='com.ecom.tests.CartPageTest_UI.verifyDeleteProductFromCart()'><b>verifyDeleteProductFromCart</b><br>Test class: com.ecom.tests.CartPageTest_UI</td>
+<td></td>
+<td>4</td>
+<td>com.ecom.tests.CartPageTest_UI@5136d012</td></tr>
+<tr>
+<td title='com.ecom.tests.ContactUsPageTest_Functional.verifySubscriptionEmpty()'><b>verifySubscriptionEmpty</b><br>Test class: com.ecom.tests.ContactUsPageTest_Functional</td>
+<td></td>
+<td>1</td>
+<td>com.ecom.tests.ContactUsPageTest_Functional@5939a379</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_ProductPageTest.verifyCartIconDisplayed()'><b>verifyCartIconDisplayed</b><br>Test class: com.ecom.tests.UI_ProductPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.UI_ProductPageTest@3315d2d7</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_ProductPageTest.verifyCategoryAndBrandNavigation()'><b>verifyCategoryAndBrandNavigation</b><br>Test class: com.ecom.tests.UI_ProductPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.UI_ProductPageTest@3315d2d7</td></tr>
+<tr>
+<td title='com.ecom.tests.CartPageTest_Functional.TC_ECOM_Cart_007()'><b>TC_ECOM_Cart_007</b><br>Test class: com.ecom.tests.CartPageTest_Functional</td>
+<td></td>
+<td>4</td>
+<td>com.ecom.tests.CartPageTest_Functional@2beee7ff</td></tr>
+<tr>
+<td title='com.ecom.tests.CartPageTest_UI.verifyProductsIconDisplayed()'><b>verifyProductsIconDisplayed</b><br>Test class: com.ecom.tests.CartPageTest_UI</td>
+<td></td>
+<td>0</td>
+<td>com.ecom.tests.CartPageTest_UI@5136d012</td></tr>
+</table><p>
+</body>
+</html>
