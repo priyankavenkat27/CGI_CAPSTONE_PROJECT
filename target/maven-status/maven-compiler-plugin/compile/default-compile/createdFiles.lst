@@ -1,0 +1,14 @@
+com\ecom\Utilities\Extentmanager.class
+com\ecom\Pages\HomePage.class
+com\ecom\Pages\CartPage.class
+com\ecom\Pages\Signup_Login_page.class
+com\ecom\Utilities\Screenshotutilities.class
+com\ecom\Pages\ProductPage.class
+com\ecom\Pages\RegisterPage.class
+com\ecom\Pages\APITesting.class
+com\ecom\Utilities\Excelutilities$1.class
+com\ecom\Pages\VideoTutorialspage.class
+com\ecom\Utilities\Excelutilities.class
+com\ecom\Pages\ContactUspage.class
+com\ecom\Pages\TestcasesPage.class
+com\ecom\Base\BaseTest.class

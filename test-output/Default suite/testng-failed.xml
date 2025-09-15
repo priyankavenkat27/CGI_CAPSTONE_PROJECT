@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.ecom.tests.RegisterPageTest_Functional">
+        <methods>
+          <include name="verifyNewUserSignupSectionVisibility"/>
+          <include name="verifySignupLoginNavigation"/>
+          <include name="enterCity" invocation-numbers="0"/>
+          <include name="setUpPage"/>
+          <include name="verifySignup" invocation-numbers="0"/>
+          <include name="verifyInvalidEmail" invocation-numbers="0"/>
+          <include name="verifyHomePageVisibility"/>
+          <include name="enterFirstName" invocation-numbers="0"/>
+          <include name="teardownClass"/>
+          <include name="verifySignupLoginButtonAvailability"/>
+          <include name="verifyInvalidName" invocation-numbers="0"/>
+          <include name="setupClass"/>
+          <include name="verifyLoggedInAsUsername"/>
+          <include name="selectTitleTest" invocation-numbers="0"/>
+          <include name="enterAddress2" invocation-numbers="0"/>
+          <include name="enterAddress1" invocation-numbers="0"/>
+          <include name="clickDeleteAccount"/>
+          <include name="endReport"/>
+          <include name="clickCreateAccountButton"/>
+          <include name="verifyAccountDeletedMessage"/>
+          <include name="startReport"/>
+          <include name="enterState" invocation-numbers="0"/>
+          <include name="verifySignuptoCreateAccount"/>
+          <include name="verifyAccountCreatedMessage"/>
+          <include name="verifyBrowserLaunch"/>
+          <include name="verifyExistSignup" invocation-numbers="0"/>
+          <include name="clickContinueAfterAccountDeleted"/>
+          <include name="enterCompany" invocation-numbers="0"/>
+          <include name="selectNewsletterTest"/>
+          <include name="enterMobile" invocation-numbers="0"/>
+          <include name="verifyAddressHeading"/>
+          <include name="enterPasswordTest" invocation-numbers="0"/>
+          <include name="enterZipcode" invocation-numbers="0"/>
+          <include name="verifySpecialOffersCheckbox"/>
+          <include name="selectDateOfBirthTest" invocation-numbers="0"/>
+          <include name="selectCountry" invocation-numbers="0"/>
+          <include name="enterLastName" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.ecom.tests.RegisterPageTest_Functional -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

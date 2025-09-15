@@ -1,0 +1,14 @@
+com\ecom\tests\TestCasesPageTest_Functional.class
+com\ecom\tests\ProductPageTest_Functional.class
+com\ecom\tests\UI_LoginPageTest.class
+com\ecom\tests\UI_ProductPageTest.class
+com\ecom\tests\login_functionality_tests.class
+com\ecom\tests\RegisterPageTest_Functional.class
+com\ecom\tests\CartPageTest_Functional.class
+com\ecom\tests\TestCasesPageTest_UI.class
+com\ecom\tests\ContactUsPageTest_Functional.class
+com\ecom\tests\SubscriptionHomePageTest_Functional.class
+com\ecom\tests\UI_contactus_test.class
+com\ecom\tests\CartPageTest_UI.class
+com\ecom\tests\APITestingPageTest_UI.class
+com\ecom\tests\UI_HomePageTest.class

@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="43" passed="42" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-15T15:11:20 IST" name="Suite" finished-at="2025-09-15T15:12:02 IST" duration-ms="41630">
+    <groups>
+    </groups>
+    <test started-at="2025-09-15T15:11:20 IST" name="TestCasesPage_UI - Chrome" finished-at="2025-09-15T15:12:02 IST" duration-ms="41630">
+      <class name="com.ecom.tests.TestCasesPageTest_UI">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:20 IST" name="startReport" finished-at="2025-09-15T15:11:20 IST" duration-ms="490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method is-config="true" signature="setupClass()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:20 IST" name="setupClass" finished-at="2025-09-15T15:11:26 IST" duration-ms="5772" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupClass -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:26 IST" name="setUpPage" finished-at="2025-09-15T15:11:26 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method signature="verifyLogoDisplayed()[pri:1, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:26 IST" name="verifyLogoDisplayed" finished-at="2025-09-15T15:11:27 IST" duration-ms="1220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogoDisplayed -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:27 IST" name="setUpPage" finished-at="2025-09-15T15:11:27 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method signature="verifyProductsIconDisplayed()[pri:2, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:27 IST" name="verifyProductsIconDisplayed" finished-at="2025-09-15T15:11:27 IST" duration-ms="160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductsIconDisplayed -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:27 IST" name="setUpPage" finished-at="2025-09-15T15:11:27 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method signature="verifyCartIconDisplayed()[pri:3, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:27 IST" name="verifyCartIconDisplayed" finished-at="2025-09-15T15:11:28 IST" duration-ms="202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCartIconDisplayed -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:28 IST" name="setUpPage" finished-at="2025-09-15T15:11:28 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method signature="verifySignupLoginIconDisplayed()[pri:4, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:28 IST" name="verifySignupLoginIconDisplayed" finished-at="2025-09-15T15:11:28 IST" duration-ms="155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignupLoginIconDisplayed -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:28 IST" name="setUpPage" finished-at="2025-09-15T15:11:28 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method signature="verifyVideoTutorialsIconDisplayed()[pri:5, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:28 IST" name="verifyVideoTutorialsIconDisplayed" finished-at="2025-09-15T15:11:28 IST" duration-ms="138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyVideoTutorialsIconDisplayed -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:28 IST" name="setUpPage" finished-at="2025-09-15T15:11:28 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method signature="verifyHomeIconDisplayed()[pri:6, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:28 IST" name="verifyHomeIconDisplayed" finished-at="2025-09-15T15:11:28 IST" duration-ms="161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomeIconDisplayed -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:28 IST" name="setUpPage" finished-at="2025-09-15T15:11:28 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method signature="verifyContactUsIconDisplayed()[pri:7, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:28 IST" name="verifyContactUsIconDisplayed" finished-at="2025-09-15T15:11:28 IST" duration-ms="182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyContactUsIconDisplayed -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:28 IST" name="setUpPage" finished-at="2025-09-15T15:11:28 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method signature="verifyApiTestingIconDisplayed()[pri:8, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:28 IST" name="verifyApiTestingIconDisplayed" finished-at="2025-09-15T15:11:28 IST" duration-ms="155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyApiTestingIconDisplayed -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:28 IST" name="setUpPage" finished-at="2025-09-15T15:11:28 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method signature="verifyTestCasesSectionDisplayed()[pri:9, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:28 IST" name="verifyTestCasesSectionDisplayed" finished-at="2025-09-15T15:11:29 IST" duration-ms="187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTestCasesSectionDisplayed -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:29 IST" name="setUpPage" finished-at="2025-09-15T15:11:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method signature="verifyTestCase1LinkDisplayed()[pri:10, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:29 IST" name="verifyTestCase1LinkDisplayed" finished-at="2025-09-15T15:11:29 IST" duration-ms="534" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTestCase1LinkDisplayed -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:29 IST" name="setUpPage" finished-at="2025-09-15T15:11:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method signature="verifyTestCase2LinkDisplayed()[pri:11, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:29 IST" name="verifyTestCase2LinkDisplayed" finished-at="2025-09-15T15:11:30 IST" duration-ms="612" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTestCase2LinkDisplayed -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:30 IST" name="setUpPage" finished-at="2025-09-15T15:11:30 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method signature="verifyTestCase3LinkDisplayed()[pri:12, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:30 IST" name="verifyTestCase3LinkDisplayed" finished-at="2025-09-15T15:11:30 IST" duration-ms="595" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTestCase3LinkDisplayed -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:30 IST" name="setUpPage" finished-at="2025-09-15T15:11:30 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method signature="verifyTestCase4LinkDisplayed()[pri:13, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:30 IST" name="verifyTestCase4LinkDisplayed" finished-at="2025-09-15T15:11:31 IST" duration-ms="551" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTestCase4LinkDisplayed -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:31 IST" name="setUpPage" finished-at="2025-09-15T15:11:31 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method signature="verifyTestCase5LinkDisplayed()[pri:14, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:31 IST" name="verifyTestCase5LinkDisplayed" finished-at="2025-09-15T15:11:31 IST" duration-ms="559" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTestCase5LinkDisplayed -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:31 IST" name="setUpPage" finished-at="2025-09-15T15:11:31 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method signature="verifyTestCase6LinkDisplayed()[pri:15, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:31 IST" name="verifyTestCase6LinkDisplayed" finished-at="2025-09-15T15:11:32 IST" duration-ms="644" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTestCase6LinkDisplayed -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:32 IST" name="setUpPage" finished-at="2025-09-15T15:11:32 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method signature="verifyTestCase7LinkDisplayed()[pri:16, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:32 IST" name="verifyTestCase7LinkDisplayed" finished-at="2025-09-15T15:11:33 IST" duration-ms="598" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTestCase7LinkDisplayed -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:33 IST" name="setUpPage" finished-at="2025-09-15T15:11:33 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method signature="verifyTestCase8LinkDisplayed()[pri:17, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:33 IST" name="verifyTestCase8LinkDisplayed" finished-at="2025-09-15T15:11:33 IST" duration-ms="573" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTestCase8LinkDisplayed -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:33 IST" name="setUpPage" finished-at="2025-09-15T15:11:33 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method signature="verifyTestCase9LinkDisplayed()[pri:18, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:33 IST" name="verifyTestCase9LinkDisplayed" finished-at="2025-09-15T15:11:34 IST" duration-ms="863" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTestCase9LinkDisplayed -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:34 IST" name="setUpPage" finished-at="2025-09-15T15:11:34 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method signature="verifyTestCase10LinkDisplayed()[pri:19, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:34 IST" name="verifyTestCase10LinkDisplayed" finished-at="2025-09-15T15:11:35 IST" duration-ms="1303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTestCase10LinkDisplayed -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:35 IST" name="setUpPage" finished-at="2025-09-15T15:11:35 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method signature="verifyTestCase11LinkDisplayed()[pri:20, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:35 IST" name="verifyTestCase11LinkDisplayed" finished-at="2025-09-15T15:11:36 IST" duration-ms="988" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTestCase11LinkDisplayed -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:36 IST" name="setUpPage" finished-at="2025-09-15T15:11:36 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method signature="verifyTestCase12LinkDisplayed()[pri:21, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:36 IST" name="verifyTestCase12LinkDisplayed" finished-at="2025-09-15T15:11:37 IST" duration-ms="895" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTestCase12LinkDisplayed -->
+        <test-method signature="verifyTestCase13LinkDisplayed()[pri:22, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:37 IST" name="verifyTestCase13LinkDisplayed" finished-at="2025-09-15T15:11:38 IST" duration-ms="896" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTestCase13LinkDisplayed -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:37 IST" name="setUpPage" finished-at="2025-09-15T15:11:37 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method signature="verifyTestCase14LinkDisplayed()[pri:23, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:38 IST" name="verifyTestCase14LinkDisplayed" finished-at="2025-09-15T15:11:39 IST" duration-ms="650" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTestCase14LinkDisplayed -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:38 IST" name="setUpPage" finished-at="2025-09-15T15:11:38 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:39 IST" name="setUpPage" finished-at="2025-09-15T15:11:39 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method signature="verifyTestCase15LinkDisplayed()[pri:24, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:39 IST" name="verifyTestCase15LinkDisplayed" finished-at="2025-09-15T15:11:40 IST" duration-ms="600" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTestCase15LinkDisplayed -->
+        <test-method signature="verifyTestCase16LinkDisplayed()[pri:25, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:40 IST" name="verifyTestCase16LinkDisplayed" finished-at="2025-09-15T15:11:40 IST" duration-ms="666" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTestCase16LinkDisplayed -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:40 IST" name="setUpPage" finished-at="2025-09-15T15:11:40 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method signature="verifyTestCase17LinkDisplayed()[pri:26, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:40 IST" name="verifyTestCase17LinkDisplayed" finished-at="2025-09-15T15:11:41 IST" duration-ms="819" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTestCase17LinkDisplayed -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:40 IST" name="setUpPage" finished-at="2025-09-15T15:11:40 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:41 IST" name="setUpPage" finished-at="2025-09-15T15:11:41 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method signature="verifyTestCase18LinkDisplayed()[pri:27, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:41 IST" name="verifyTestCase18LinkDisplayed" finished-at="2025-09-15T15:11:42 IST" duration-ms="650" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTestCase18LinkDisplayed -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:42 IST" name="setUpPage" finished-at="2025-09-15T15:11:42 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method signature="verifyTestCase19LinkDisplayed()[pri:28, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:42 IST" name="verifyTestCase19LinkDisplayed" finished-at="2025-09-15T15:11:42 IST" duration-ms="614" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTestCase19LinkDisplayed -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:42 IST" name="setUpPage" finished-at="2025-09-15T15:11:42 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method signature="verifyTestCase20LinkDisplayed()[pri:29, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:42 IST" name="verifyTestCase20LinkDisplayed" finished-at="2025-09-15T15:11:43 IST" duration-ms="589" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTestCase20LinkDisplayed -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:43 IST" name="setUpPage" finished-at="2025-09-15T15:11:43 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method signature="verifyTestCase21LinkDisplayed()[pri:30, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:43 IST" name="verifyTestCase21LinkDisplayed" finished-at="2025-09-15T15:11:44 IST" duration-ms="675" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTestCase21LinkDisplayed -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:44 IST" name="setUpPage" finished-at="2025-09-15T15:11:44 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method signature="verifyTestCase22LinkDisplayed()[pri:31, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:44 IST" name="verifyTestCase22LinkDisplayed" finished-at="2025-09-15T15:11:44 IST" duration-ms="664" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTestCase22LinkDisplayed -->
+        <test-method signature="verifyTestCase23LinkDisplayed()[pri:32, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:44 IST" name="verifyTestCase23LinkDisplayed" finished-at="2025-09-15T15:11:45 IST" duration-ms="652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTestCase23LinkDisplayed -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:44 IST" name="setUpPage" finished-at="2025-09-15T15:11:44 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:45 IST" name="setUpPage" finished-at="2025-09-15T15:11:45 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method signature="verifyTestCase24LinkDisplayed()[pri:33, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:45 IST" name="verifyTestCase24LinkDisplayed" finished-at="2025-09-15T15:11:46 IST" duration-ms="644" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTestCase24LinkDisplayed -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:46 IST" name="setUpPage" finished-at="2025-09-15T15:11:46 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method signature="verifyTestCase25LinkDisplayed()[pri:34, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:46 IST" name="verifyTestCase25LinkDisplayed" finished-at="2025-09-15T15:11:46 IST" duration-ms="741" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTestCase25LinkDisplayed -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:46 IST" name="setUpPage" finished-at="2025-09-15T15:11:46 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method signature="verifyTestCase26LinkDisplayed()[pri:35, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:46 IST" name="verifyTestCase26LinkDisplayed" finished-at="2025-09-15T15:11:47 IST" duration-ms="653" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTestCase26LinkDisplayed -->
+        <test-method signature="verifyFeedbackSectionDisplayed()[pri:36, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:47 IST" name="verifyFeedbackSectionDisplayed" finished-at="2025-09-15T15:11:47 IST" duration-ms="200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFeedbackSectionDisplayed -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:47 IST" name="setUpPage" finished-at="2025-09-15T15:11:47 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method signature="verifyFeedbackEmailDisplayed()[pri:37, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:47 IST" name="verifyFeedbackEmailDisplayed" finished-at="2025-09-15T15:11:47 IST" duration-ms="220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFeedbackEmailDisplayed -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:47 IST" name="setUpPage" finished-at="2025-09-15T15:11:47 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:47 IST" name="setUpPage" finished-at="2025-09-15T15:11:47 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method signature="verifySubscriptionIconVisible()[pri:38, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:47 IST" name="verifySubscriptionIconVisible" finished-at="2025-09-15T15:11:48 IST" duration-ms="274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySubscriptionIconVisible -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:48 IST" name="setUpPage" finished-at="2025-09-15T15:11:48 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method signature="verifySubscriptionEmpty()[pri:39, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:48 IST" name="verifySubscriptionEmpty" finished-at="2025-09-15T15:11:48 IST" duration-ms="826" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySubscriptionEmpty -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:53 IST" name="setUpPage" finished-at="2025-09-15T15:11:53 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method signature="verifySubscriptionInvalid(java.lang.String)[pri:40, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:53 IST" name="verifySubscriptionInvalid" data-provider="subscriptionDataInvalid" finished-at="2025-09-15T15:11:56 IST" duration-ms="3119" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kaviyaGma.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySubscriptionInvalid -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:56 IST" name="setUpPage" finished-at="2025-09-15T15:11:56 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method signature="verifySubscriptionValid(java.lang.String)[pri:41, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:56 IST" name="verifySubscriptionValid" data-provider="subscriptionDataValid" finished-at="2025-09-15T15:11:57 IST" duration-ms="761" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kaviya@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySubscriptionValid -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:57 IST" name="setUpPage" finished-at="2025-09-15T15:11:57 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method signature="verifySubscriptionUseralreadyExist(java.lang.String)[pri:42, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:57 IST" name="verifySubscriptionUseralreadyExist" data-provider="subscriptionDataValid" finished-at="2025-09-15T15:11:58 IST" duration-ms="900" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kaviya@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Subscription success message should NOT be displayed! expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Subscription success message should NOT be displayed! expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at com.ecom.tests.TestCasesPageTest_UI.verifySubscriptionUseralreadyExist(TestCasesPageTest_UI.java:524)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySubscriptionUseralreadyExist -->
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:58 IST" name="setUpPage" finished-at="2025-09-15T15:11:58 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method signature="verifyScrollToTopButton()[pri:43, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:58 IST" name="verifyScrollToTopButton" finished-at="2025-09-15T15:11:58 IST" duration-ms="631" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyScrollToTopButton -->
+        <test-method is-config="true" signature="teardownClass()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:11:58 IST" name="teardownClass" finished-at="2025-09-15T15:12:02 IST" duration-ms="3340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownClass -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.ecom.tests.TestCasesPageTest_UI@11fc564b]" started-at="2025-09-15T15:12:02 IST" name="endReport" finished-at="2025-09-15T15:12:04 IST" duration-ms="1722" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- com.ecom.tests.TestCasesPageTest_UI -->
+    </test> <!-- TestCasesPage_UI - Chrome -->
+  </suite> <!-- Suite -->
+</testng-results>

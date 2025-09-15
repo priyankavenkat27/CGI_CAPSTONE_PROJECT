@@ -1,0 +1,1007 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="785.23" tests="297" errors="0" skipped="0" failures="11">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\HP\eclipse-workspace\CGI_AUG2026_Copy\target\test-classes;C:\Users\HP\eclipse-workspace\CGI_AUG2026_Copy\target\classes;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-java\4.35.0\selenium-java-4.35.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-api\4.35.0\selenium-api-4.35.0.jar;C:\Users\HP\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.35.0\selenium-chrome-driver-4.35.0.jar;C:\Users\HP\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.35.0\selenium-chromium-driver-4.35.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-json\4.35.0\selenium-json-4.35.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.35.0\selenium-manager-4.35.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v137\4.35.0\selenium-devtools-v137-4.35.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v138\4.35.0\selenium-devtools-v138-4.35.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v139\4.35.0\selenium-devtools-v139-4.35.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.35.0\selenium-edge-driver-4.35.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.35.0\selenium-firefox-driver-4.35.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-http\4.35.0\selenium-http-4.35.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.35.0\selenium-ie-driver-4.35.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.35.0\selenium-remote-driver-4.35.0.jar;C:\Users\HP\.m2\repository\com\google\guava\guava\33.4.8-jre\guava-33.4.8-jre.jar;C:\Users\HP\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\HP\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\HP\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-api\1.53.0\opentelemetry-api-1.53.0.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-context\1.53.0\opentelemetry-context-1.53.0.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-common\1.53.0\opentelemetry-common-1.53.0.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.53.0\opentelemetry-exporter-logging-1.53.0.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.53.0\opentelemetry-sdk-common-1.53.0.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.53.0\opentelemetry-sdk-extension-autoconfigure-spi-1.53.0.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.53.0\opentelemetry-sdk-extension-autoconfigure-1.53.0.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.53.0\opentelemetry-sdk-trace-1.53.0.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.53.0\opentelemetry-sdk-1.53.0.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.53.0\opentelemetry-sdk-metrics-1.53.0.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.53.0\opentelemetry-sdk-logs-1.53.0.jar;C:\Users\HP\.m2\repository\net\bytebuddy\byte-buddy\1.17.6\byte-buddy-1.17.6.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-os\4.35.0\selenium-os-4.35.0.jar;C:\Users\HP\.m2\repository\org\apache\commons\commons-exec\1.5.0\commons-exec-1.5.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.35.0\selenium-safari-driver-4.35.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-support\4.35.0\selenium-support-4.35.0.jar;C:\Users\HP\.m2\repository\io\github\bonigarcia\webdrivermanager\6.2.0\webdrivermanager-6.2.0.jar;C:\Users\HP\.m2\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;C:\Users\HP\.m2\repository\com\google\code\gson\gson\2.13.1\gson-2.13.1.jar;C:\Users\HP\.m2\repository\com\google\errorprone\error_prone_annotations\2.38.0\error_prone_annotations-2.38.0.jar;C:\Users\HP\.m2\repository\com\github\docker-java\docker-java\3.5.3\docker-java-3.5.3.jar;C:\Users\HP\.m2\repository\com\github\docker-java\docker-java-core\3.5.3\docker-java-core-3.5.3.jar;C:\Users\HP\.m2\repository\com\github\docker-java\docker-java-api\3.5.3\docker-java-api-3.5.3.jar;C:\Users\HP\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.18.4\jackson-annotations-2.18.4.jar;C:\Users\HP\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.18.4\jackson-databind-2.18.4.jar;C:\Users\HP\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.4\jackson-core-2.18.4.jar;C:\Users\HP\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\HP\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.5.3\docker-java-transport-httpclient5-3.5.3.jar;C:\Users\HP\.m2\repository\com\github\docker-java\docker-java-transport\3.5.3\docker-java-transport-3.5.3.jar;C:\Users\HP\.m2\repository\net\java\dev\jna\jna\5.17.0\jna-5.17.0.jar;C:\Users\HP\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\HP\.m2\repository\org\apache\commons\commons-lang3\3.18.0\commons-lang3-3.18.0.jar;C:\Users\HP\.m2\repository\org\apache\commons\commons-compress\1.27.1\commons-compress-1.27.1.jar;C:\Users\HP\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.4.3\httpclient5-5.4.3.jar;C:\Users\HP\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.3.4\httpcore5-5.3.4.jar;C:\Users\HP\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.3.4\httpcore5-h2-5.3.4.jar;C:\Users\HP\.m2\repository\net\java\dev\jna\jna-platform\5.17.0\jna-platform-5.17.0.jar;C:\Users\HP\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\HP\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\HP\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\HP\.m2\repository\org\apache\poi\poi\5.4.1\poi-5.4.1.jar;C:\Users\HP\.m2\repository\commons-codec\commons-codec\1.18.0\commons-codec-1.18.0.jar;C:\Users\HP\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\HP\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\HP\.m2\repository\commons-io\commons-io\2.18.0\commons-io-2.18.0.jar;C:\Users\HP\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\HP\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.3\log4j-api-2.24.3.jar;C:\Users\HP\.m2\repository\org\apache\poi\poi-ooxml\5.4.1\poi-ooxml-5.4.1.jar;C:\Users\HP\.m2\repository\org\apache\poi\poi-ooxml-lite\5.4.1\poi-ooxml-lite-5.4.1.jar;C:\Users\HP\.m2\repository\org\apache\xmlbeans\xmlbeans\5.3.0\xmlbeans-5.3.0.jar;C:\Users\HP\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\HP\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\HP\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\HP\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\HP\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\HP\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\HP\.m2\repository\com\applitools\eyes-selenium-java5\5.81.0\eyes-selenium-java5-5.81.0.jar;C:\Users\HP\.m2\repository\com\applitools\eyes-selenium-common-java5\5.72.0\eyes-selenium-common-java5-5.72.0.jar;C:\Users\HP\.m2\repository\com\applitools\eyes-sdk-core-java5\5.84.0\eyes-sdk-core-java5-5.84.0.jar;C:\Users\HP\.m2\repository\com\applitools\eyes-universal-core\5.75.0\eyes-universal-core-5.75.0.jar;C:\Users\HP\.m2\repository\com\applitools\eyes-common-java5\5.69.0\eyes-common-java5-5.69.0.jar;C:\Users\HP\.m2\repository\org\imgscalr\imgscalr-lib\4.2\imgscalr-lib-4.2.jar;C:\Users\HP\.m2\repository\org\jsoup\jsoup\1.15.3\jsoup-1.15.3.jar;C:\Users\HP\.m2\repository\com\applitools\eyes-universal-core-win\5.75.0\eyes-universal-core-win-5.75.0.jar;C:\Users\HP\.m2\repository\com\applitools\eyes-ufg-java5\5.73.0\eyes-ufg-java5-5.73.0.jar;C:\Users\HP\.m2\repository\javax\websocket\javax.websocket-client-api\1.1\javax.websocket-client-api-1.1.jar;C:\Users\HP\.m2\repository\com\helger\ph-css\6.1.1\ph-css-6.1.1.jar;C:\Users\HP\.m2\repository\com\helger\ph-commons\9.0.2\ph-commons-9.0.2.jar;C:\Users\HP\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\HP\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\HP\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\HP\.m2\repository\org\hamcrest\hamcrest\3.0\hamcrest-3.0.jar;C:\Users\HP\.m2\repository\io\cucumber\cucumber-java\7.27.2\cucumber-java-7.27.2.jar;C:\Users\HP\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\HP\.m2\repository\io\cucumber\cucumber-core\7.27.2\cucumber-core-7.27.2.jar;C:\Users\HP\.m2\repository\io\cucumber\cucumber-gherkin\7.27.2\cucumber-gherkin-7.27.2.jar;C:\Users\HP\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.27.2\cucumber-gherkin-messages-7.27.2.jar;C:\Users\HP\.m2\repository\io\cucumber\gherkin\34.0.0\gherkin-34.0.0.jar;C:\Users\HP\.m2\repository\org\assertj\assertj-core\3.27.4\assertj-core-3.27.4.jar;C:\Users\HP\.m2\repository\io\cucumber\messages\28.1.0\messages-28.1.0.jar;C:\Users\HP\.m2\repository\io\cucumber\pretty-formatter\2.1.0\pretty-formatter-2.1.0.jar;C:\Users\HP\.m2\repository\io\cucumber\query\13.6.0\query-13.6.0.jar;C:\Users\HP\.m2\repository\io\cucumber\testng-xml-formatter\0.5.0\testng-xml-formatter-0.5.0.jar;C:\Users\HP\.m2\repository\io\cucumber\tag-expressions\6.1.2\tag-expressions-6.1.2.jar;C:\Users\HP\.m2\repository\io\cucumber\cucumber-expressions\18.0.1\cucumber-expressions-18.0.1.jar;C:\Users\HP\.m2\repository\io\cucumber\datatable\7.27.2\datatable-7.27.2.jar;C:\Users\HP\.m2\repository\io\cucumber\cucumber-plugin\7.27.2\cucumber-plugin-7.27.2.jar;C:\Users\HP\.m2\repository\io\cucumber\docstring\7.27.2\docstring-7.27.2.jar;C:\Users\HP\.m2\repository\io\cucumber\html-formatter\21.13.0\html-formatter-21.13.0.jar;C:\Users\HP\.m2\repository\io\cucumber\junit-xml-formatter\0.8.1\junit-xml-formatter-0.8.1.jar;C:\Users\HP\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\HP\.m2\repository\io\cucumber\cucumber-junit\7.27.2\cucumber-junit-7.27.2.jar;C:\Users\HP\.m2\repository\io\rest-assured\rest-assured\5.5.6\rest-assured-5.5.6.jar;C:\Users\HP\.m2\repository\org\apache\groovy\groovy\4.0.22\groovy-4.0.22.jar;C:\Users\HP\.m2\repository\org\apache\groovy\groovy-xml\4.0.22\groovy-xml-4.0.22.jar;C:\Users\HP\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\HP\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\HP\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\HP\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\HP\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\HP\.m2\repository\io\rest-assured\json-path\5.5.6\json-path-5.5.6.jar;C:\Users\HP\.m2\repository\org\apache\groovy\groovy-json\4.0.22\groovy-json-4.0.22.jar;C:\Users\HP\.m2\repository\io\rest-assured\rest-assured-common\5.5.6\rest-assured-common-5.5.6.jar;C:\Users\HP\.m2\repository\io\rest-assured\xml-path\5.5.6\xml-path-5.5.6.jar;C:\Users\HP\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="sun.java.command" value="C:\Users\HP\AppData\Local\Temp\surefire14517167010748604119\surefirebooter-20250915134852734_3.jar C:\Users\HP\AppData\Local\Temp\surefire14517167010748604119 2025-09-15T13-48-52_423-jvmRun1 surefire-20250915134852734_1tmp surefire_0-20250915134852734_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\HP\eclipse-workspace\CGI_AUG2026_Copy\target\test-classes;C:\Users\HP\eclipse-workspace\CGI_AUG2026_Copy\target\classes;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-java\4.35.0\selenium-java-4.35.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-api\4.35.0\selenium-api-4.35.0.jar;C:\Users\HP\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.35.0\selenium-chrome-driver-4.35.0.jar;C:\Users\HP\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.35.0\selenium-chromium-driver-4.35.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-json\4.35.0\selenium-json-4.35.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.35.0\selenium-manager-4.35.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v137\4.35.0\selenium-devtools-v137-4.35.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v138\4.35.0\selenium-devtools-v138-4.35.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v139\4.35.0\selenium-devtools-v139-4.35.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.35.0\selenium-edge-driver-4.35.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.35.0\selenium-firefox-driver-4.35.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-http\4.35.0\selenium-http-4.35.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.35.0\selenium-ie-driver-4.35.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.35.0\selenium-remote-driver-4.35.0.jar;C:\Users\HP\.m2\repository\com\google\guava\guava\33.4.8-jre\guava-33.4.8-jre.jar;C:\Users\HP\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\HP\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\HP\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-api\1.53.0\opentelemetry-api-1.53.0.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-context\1.53.0\opentelemetry-context-1.53.0.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-common\1.53.0\opentelemetry-common-1.53.0.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.53.0\opentelemetry-exporter-logging-1.53.0.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.53.0\opentelemetry-sdk-common-1.53.0.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.53.0\opentelemetry-sdk-extension-autoconfigure-spi-1.53.0.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.53.0\opentelemetry-sdk-extension-autoconfigure-1.53.0.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.53.0\opentelemetry-sdk-trace-1.53.0.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.53.0\opentelemetry-sdk-1.53.0.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.53.0\opentelemetry-sdk-metrics-1.53.0.jar;C:\Users\HP\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.53.0\opentelemetry-sdk-logs-1.53.0.jar;C:\Users\HP\.m2\repository\net\bytebuddy\byte-buddy\1.17.6\byte-buddy-1.17.6.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-os\4.35.0\selenium-os-4.35.0.jar;C:\Users\HP\.m2\repository\org\apache\commons\commons-exec\1.5.0\commons-exec-1.5.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.35.0\selenium-safari-driver-4.35.0.jar;C:\Users\HP\.m2\repository\org\seleniumhq\selenium\selenium-support\4.35.0\selenium-support-4.35.0.jar;C:\Users\HP\.m2\repository\io\github\bonigarcia\webdrivermanager\6.2.0\webdrivermanager-6.2.0.jar;C:\Users\HP\.m2\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;C:\Users\HP\.m2\repository\com\google\code\gson\gson\2.13.1\gson-2.13.1.jar;C:\Users\HP\.m2\repository\com\google\errorprone\error_prone_annotations\2.38.0\error_prone_annotations-2.38.0.jar;C:\Users\HP\.m2\repository\com\github\docker-java\docker-java\3.5.3\docker-java-3.5.3.jar;C:\Users\HP\.m2\repository\com\github\docker-java\docker-java-core\3.5.3\docker-java-core-3.5.3.jar;C:\Users\HP\.m2\repository\com\github\docker-java\docker-java-api\3.5.3\docker-java-api-3.5.3.jar;C:\Users\HP\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.18.4\jackson-annotations-2.18.4.jar;C:\Users\HP\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.18.4\jackson-databind-2.18.4.jar;C:\Users\HP\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.4\jackson-core-2.18.4.jar;C:\Users\HP\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\HP\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.5.3\docker-java-transport-httpclient5-3.5.3.jar;C:\Users\HP\.m2\repository\com\github\docker-java\docker-java-transport\3.5.3\docker-java-transport-3.5.3.jar;C:\Users\HP\.m2\repository\net\java\dev\jna\jna\5.17.0\jna-5.17.0.jar;C:\Users\HP\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\HP\.m2\repository\org\apache\commons\commons-lang3\3.18.0\commons-lang3-3.18.0.jar;C:\Users\HP\.m2\repository\org\apache\commons\commons-compress\1.27.1\commons-compress-1.27.1.jar;C:\Users\HP\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.4.3\httpclient5-5.4.3.jar;C:\Users\HP\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.3.4\httpcore5-5.3.4.jar;C:\Users\HP\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.3.4\httpcore5-h2-5.3.4.jar;C:\Users\HP\.m2\repository\net\java\dev\jna\jna-platform\5.17.0\jna-platform-5.17.0.jar;C:\Users\HP\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\HP\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\HP\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\HP\.m2\repository\org\apache\poi\poi\5.4.1\poi-5.4.1.jar;C:\Users\HP\.m2\repository\commons-codec\commons-codec\1.18.0\commons-codec-1.18.0.jar;C:\Users\HP\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\HP\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\HP\.m2\repository\commons-io\commons-io\2.18.0\commons-io-2.18.0.jar;C:\Users\HP\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\HP\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.3\log4j-api-2.24.3.jar;C:\Users\HP\.m2\repository\org\apache\poi\poi-ooxml\5.4.1\poi-ooxml-5.4.1.jar;C:\Users\HP\.m2\repository\org\apache\poi\poi-ooxml-lite\5.4.1\poi-ooxml-lite-5.4.1.jar;C:\Users\HP\.m2\repository\org\apache\xmlbeans\xmlbeans\5.3.0\xmlbeans-5.3.0.jar;C:\Users\HP\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\HP\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\HP\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\HP\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\HP\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\HP\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\HP\.m2\repository\com\applitools\eyes-selenium-java5\5.81.0\eyes-selenium-java5-5.81.0.jar;C:\Users\HP\.m2\repository\com\applitools\eyes-selenium-common-java5\5.72.0\eyes-selenium-common-java5-5.72.0.jar;C:\Users\HP\.m2\repository\com\applitools\eyes-sdk-core-java5\5.84.0\eyes-sdk-core-java5-5.84.0.jar;C:\Users\HP\.m2\repository\com\applitools\eyes-universal-core\5.75.0\eyes-universal-core-5.75.0.jar;C:\Users\HP\.m2\repository\com\applitools\eyes-common-java5\5.69.0\eyes-common-java5-5.69.0.jar;C:\Users\HP\.m2\repository\org\imgscalr\imgscalr-lib\4.2\imgscalr-lib-4.2.jar;C:\Users\HP\.m2\repository\org\jsoup\jsoup\1.15.3\jsoup-1.15.3.jar;C:\Users\HP\.m2\repository\com\applitools\eyes-universal-core-win\5.75.0\eyes-universal-core-win-5.75.0.jar;C:\Users\HP\.m2\repository\com\applitools\eyes-ufg-java5\5.73.0\eyes-ufg-java5-5.73.0.jar;C:\Users\HP\.m2\repository\javax\websocket\javax.websocket-client-api\1.1\javax.websocket-client-api-1.1.jar;C:\Users\HP\.m2\repository\com\helger\ph-css\6.1.1\ph-css-6.1.1.jar;C:\Users\HP\.m2\repository\com\helger\ph-commons\9.0.2\ph-commons-9.0.2.jar;C:\Users\HP\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\HP\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\HP\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\HP\.m2\repository\org\hamcrest\hamcrest\3.0\hamcrest-3.0.jar;C:\Users\HP\.m2\repository\io\cucumber\cucumber-java\7.27.2\cucumber-java-7.27.2.jar;C:\Users\HP\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\HP\.m2\repository\io\cucumber\cucumber-core\7.27.2\cucumber-core-7.27.2.jar;C:\Users\HP\.m2\repository\io\cucumber\cucumber-gherkin\7.27.2\cucumber-gherkin-7.27.2.jar;C:\Users\HP\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.27.2\cucumber-gherkin-messages-7.27.2.jar;C:\Users\HP\.m2\repository\io\cucumber\gherkin\34.0.0\gherkin-34.0.0.jar;C:\Users\HP\.m2\repository\org\assertj\assertj-core\3.27.4\assertj-core-3.27.4.jar;C:\Users\HP\.m2\repository\io\cucumber\messages\28.1.0\messages-28.1.0.jar;C:\Users\HP\.m2\repository\io\cucumber\pretty-formatter\2.1.0\pretty-formatter-2.1.0.jar;C:\Users\HP\.m2\repository\io\cucumber\query\13.6.0\query-13.6.0.jar;C:\Users\HP\.m2\repository\io\cucumber\testng-xml-formatter\0.5.0\testng-xml-formatter-0.5.0.jar;C:\Users\HP\.m2\repository\io\cucumber\tag-expressions\6.1.2\tag-expressions-6.1.2.jar;C:\Users\HP\.m2\repository\io\cucumber\cucumber-expressions\18.0.1\cucumber-expressions-18.0.1.jar;C:\Users\HP\.m2\repository\io\cucumber\datatable\7.27.2\datatable-7.27.2.jar;C:\Users\HP\.m2\repository\io\cucumber\cucumber-plugin\7.27.2\cucumber-plugin-7.27.2.jar;C:\Users\HP\.m2\repository\io\cucumber\docstring\7.27.2\docstring-7.27.2.jar;C:\Users\HP\.m2\repository\io\cucumber\html-formatter\21.13.0\html-formatter-21.13.0.jar;C:\Users\HP\.m2\repository\io\cucumber\junit-xml-formatter\0.8.1\junit-xml-formatter-0.8.1.jar;C:\Users\HP\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\HP\.m2\repository\io\cucumber\cucumber-junit\7.27.2\cucumber-junit-7.27.2.jar;C:\Users\HP\.m2\repository\io\rest-assured\rest-assured\5.5.6\rest-assured-5.5.6.jar;C:\Users\HP\.m2\repository\org\apache\groovy\groovy\4.0.22\groovy-4.0.22.jar;C:\Users\HP\.m2\repository\org\apache\groovy\groovy-xml\4.0.22\groovy-xml-4.0.22.jar;C:\Users\HP\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\HP\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\HP\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\HP\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\HP\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\HP\.m2\repository\io\rest-assured\json-path\5.5.6\json-path-5.5.6.jar;C:\Users\HP\.m2\repository\org\apache\groovy\groovy-json\4.0.22\groovy-json-4.0.22.jar;C:\Users\HP\.m2\repository\io\rest-assured\rest-assured-common\5.5.6\rest-assured-common-5.5.6.jar;C:\Users\HP\.m2\repository\io\rest-assured\xml-path\5.5.6\xml-path-5.5.6.jar;C:\Users\HP\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\HP"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\HP\eclipse-workspace\CGI_AUG2026_Copy"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\HP\AppData\Local\Temp\surefire14517167010748604119\surefirebooter-20250915134852734_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.12+8-LTS-286"/>
+    <property name="user.name" value="HP"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\HP\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\HP\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.12"/>
+    <property name="user.dir" value="C:\Users\HP\eclipse-workspace\CGI_AUG2026_Copy"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Eclipse Adoptium\jdk-17.0.16.8-hotspot\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\MongoDB\Server\7.0\bin;C:\Users\HP\Downloads\mongosh-2.2.15-win32-x64\bin;C:\Program Files\Java\jdk-23\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Git\cmd;C:\maven\apache-maven-3.9.11\bin;C:\Users\HP\AppData\Local\Microsoft\WindowsApps;C:\Users\HP\AppData\Local\Programs\Microsoft VS Code\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.12+8-LTS-286"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="verifyLogoDisplayed" classname="com.ecom.tests.APITestingPageTest_UI" time="2.05">
+    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Sep 15, 2025 1:48:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 140, returning the closest version; found: 139; Please update to a Selenium version that supports CDP version 140
+]]></system-err>
+  </testcase>
+  <testcase name="verifyProductsIconDisplayed" classname="com.ecom.tests.APITestingPageTest_UI" time="0.175"/>
+  <testcase name="verifyCartIconDisplayed" classname="com.ecom.tests.APITestingPageTest_UI" time="0.17"/>
+  <testcase name="verifySignupLoginIconDisplayed" classname="com.ecom.tests.APITestingPageTest_UI" time="0.159"/>
+  <testcase name="verifyVideoTutorialsIconDisplayed" classname="com.ecom.tests.APITestingPageTest_UI" time="0.166"/>
+  <testcase name="verifyHomeIconDisplayed" classname="com.ecom.tests.APITestingPageTest_UI" time="0.139"/>
+  <testcase name="verifyContactUsIconDisplayed" classname="com.ecom.tests.APITestingPageTest_UI" time="0.124"/>
+  <testcase name="verifyApiTestingIconDisplayed" classname="com.ecom.tests.APITestingPageTest_UI" time="0.143"/>
+  <testcase name="verifyApilistSectionDisplayed" classname="com.ecom.tests.APITestingPageTest_UI" time="0.147"/>
+  <testcase name="verifyApiList1LinkDisplayed" classname="com.ecom.tests.APITestingPageTest_UI" time="0.533"/>
+  <testcase name="verifyApiList2LinkDisplayed" classname="com.ecom.tests.APITestingPageTest_UI" time="0.562"/>
+  <testcase name="verifyApiList3LinkDisplayed" classname="com.ecom.tests.APITestingPageTest_UI" time="0.516"/>
+  <testcase name="verifyApiList4LinkDisplayed" classname="com.ecom.tests.APITestingPageTest_UI" time="0.499"/>
+  <testcase name="verifyApiList5LinkDisplayed" classname="com.ecom.tests.APITestingPageTest_UI" time="0.525"/>
+  <testcase name="verifyApiList6LinkDisplayed" classname="com.ecom.tests.APITestingPageTest_UI" time="0.534"/>
+  <testcase name="verifyApiList7LinkDisplayed" classname="com.ecom.tests.APITestingPageTest_UI" time="0.575"/>
+  <testcase name="verifyApiList8LinkDisplayed" classname="com.ecom.tests.APITestingPageTest_UI" time="0.636"/>
+  <testcase name="verifyApiList9LinkDisplayed" classname="com.ecom.tests.APITestingPageTest_UI" time="0.604"/>
+  <testcase name="verifyApiList10LinkDisplayed" classname="com.ecom.tests.APITestingPageTest_UI" time="0.579"/>
+  <testcase name="verifyApiList11LinkDisplayed" classname="com.ecom.tests.APITestingPageTest_UI" time="0.593"/>
+  <testcase name="verifyApiList12LinkDisplayed" classname="com.ecom.tests.APITestingPageTest_UI" time="0.517"/>
+  <testcase name="verifyApiList13LinkDisplayed" classname="com.ecom.tests.APITestingPageTest_UI" time="0.508"/>
+  <testcase name="verifyApiList14LinkDisplayed" classname="com.ecom.tests.APITestingPageTest_UI" time="0.509"/>
+  <testcase name="verifyFeedbackSectionDisplayed" classname="com.ecom.tests.APITestingPageTest_UI" time="0.142"/>
+  <testcase name="verifyFeedbackEmailDisplayed" classname="com.ecom.tests.APITestingPageTest_UI" time="0.157"/>
+  <testcase name="verifySubscriptionIconVisible" classname="com.ecom.tests.APITestingPageTest_UI" time="0.181"/>
+  <testcase name="verifySubscriptionEmpty" classname="com.ecom.tests.APITestingPageTest_UI" time="0.546"/>
+  <testcase name="verifySubscriptionInvalid[kaviyaGma.com](1)" classname="com.ecom.tests.APITestingPageTest_UI" time="2.604">
+    <system-out><![CDATA[2025-09-15T08:19:13.627639700Z main ERROR Log4j API could not find a logging provider.
+Rows: 2, Cols: 1
+]]></system-out>
+  </testcase>
+  <testcase name="verifySubscriptionValid[kaviya@gmail.com](1)" classname="com.ecom.tests.APITestingPageTest_UI" time="0.505">
+    <system-out><![CDATA[Rows: 2, Cols: 1
+]]></system-out>
+  </testcase>
+  <testcase name="verifySubscriptionUseralreadyExist[kaviya@gmail.com](1)" classname="com.ecom.tests.APITestingPageTest_UI" time="0.525">
+    <failure message="Subscription success message should NOT be displayed! expected [false] but found [true]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Subscription success message should NOT be displayed! expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at com.ecom.tests.APITestingPageTest_UI.verifySubscriptionUseralreadyExist(APITestingPageTest_UI.java:393)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Rows: 2, Cols: 1
+]]></system-out>
+  </testcase>
+  <testcase name="verifyScrollToTopButton" classname="com.ecom.tests.APITestingPageTest_UI" time="0.282"/>
+  <testcase name="TC_ECOM_Cart_001" classname="com.ecom.tests.CartPageTest_Functional" time="0.853">
+    <system-err><![CDATA[Sep 15, 2025 1:49:21 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 140, returning the closest version; found: 139; Please update to a Selenium version that supports CDP version 140
+]]></system-err>
+  </testcase>
+  <testcase name="TC_ECOM_Cart_002" classname="com.ecom.tests.CartPageTest_Functional" time="2.515"/>
+  <testcase name="TC_ECOM_Cart_003" classname="com.ecom.tests.CartPageTest_Functional" time="0.993"/>
+  <testcase name="TC_ECOM_Cart_004" classname="com.ecom.tests.CartPageTest_Functional" time="3.059"/>
+  <testcase name="TC_ECOM_Cart_005" classname="com.ecom.tests.CartPageTest_Functional" time="3.954"/>
+  <testcase name="TC_ECOM_Cart_006" classname="com.ecom.tests.CartPageTest_Functional" time="24.485"/>
+  <testcase name="TC_ECOM_Cart_007" classname="com.ecom.tests.CartPageTest_Functional" time="5.738"/>
+  <testcase name="TC_ECOM_Cart_008[Zebuuu, zebuuu1@test.com, Mr, Password123, 10, May, 1995, Zebuuu, Test, 123 Street, City, India, TN, Chennai, 600986, 987654321](1)" classname="com.ecom.tests.CartPageTest_Functional" time="13.881">
+    <failure message="Expected condition failed: waiting for visibility of element located by By.name: name (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60914}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60914/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: bb5952f08a9e5226cb236b93e24b72a2" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+Expected condition failed: waiting for visibility of element located by By.name: name (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60914}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60914/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bb5952f08a9e5226cb236b93e24b72a2
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.ecom.tests.CartPageTest_Functional.handleFailure(CartPageTest_Functional.java:39)
+	at com.ecom.tests.CartPageTest_Functional.TC_ECOM_Cart_008(CartPageTest_Functional.java:367)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+  </testcase>
+  <testcase name="TC_ECOM_Cart_009" classname="com.ecom.tests.CartPageTest_Functional" time="1.592"/>
+  <testcase name="TC_ECOM_Cart_010" classname="com.ecom.tests.CartPageTest_Functional" time="3.223"/>
+  <testcase name="TC_ECOM_Cart_011" classname="com.ecom.tests.CartPageTest_Functional" time="2.873"/>
+  <testcase name="TC_ECOM_Cart_012" classname="com.ecom.tests.CartPageTest_Functional" time="1.236"/>
+  <testcase name="verifyLogoDisplayed" classname="com.ecom.tests.CartPageTest_UI" time="1.063">
+    <system-err><![CDATA[Sep 15, 2025 1:50:31 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 140, returning the closest version; found: 139; Please update to a Selenium version that supports CDP version 140
+]]></system-err>
+  </testcase>
+  <testcase name="verifyProductsIconDisplayed" classname="com.ecom.tests.CartPageTest_UI" time="0.132"/>
+  <testcase name="verifyTestCasesDisplayed" classname="com.ecom.tests.CartPageTest_UI" time="0.15"/>
+  <testcase name="verifySignupLoginIconDisplayed" classname="com.ecom.tests.CartPageTest_UI" time="0.15"/>
+  <testcase name="verifyVideoTutorialsIconDisplayed" classname="com.ecom.tests.CartPageTest_UI" time="0.152"/>
+  <testcase name="verifyHomeIconDisplayed" classname="com.ecom.tests.CartPageTest_UI" time="0.133"/>
+  <testcase name="verifyContactUsIconDisplayed" classname="com.ecom.tests.CartPageTest_UI" time="0.131"/>
+  <testcase name="verifyApiTestingIconDisplayed" classname="com.ecom.tests.CartPageTest_UI" time="0.156"/>
+  <testcase name="verifyShoppingCartBreadcrumb" classname="com.ecom.tests.CartPageTest_UI" time="0.117"/>
+  <testcase name="verifyEmptyCartHereLink" classname="com.ecom.tests.CartPageTest_UI" time="0.126"/>
+  <testcase name="verifyDeleteProductFromCart" classname="com.ecom.tests.CartPageTest_UI" time="4.094"/>
+  <testcase name="verifyProceedtoCheckout" classname="com.ecom.tests.CartPageTest_UI" time="0.149"/>
+  <testcase name="verifyProductDiaplaytoBuy" classname="com.ecom.tests.CartPageTest_UI" time="0.322"/>
+  <testcase name="verifySubscriptionIconVisible" classname="com.ecom.tests.CartPageTest_UI" time="0.152"/>
+  <testcase name="verifySubscriptionEmpty" classname="com.ecom.tests.CartPageTest_UI" time="0.573"/>
+  <testcase name="verifySubscriptionInvalid[kaviyaGma.com](1)" classname="com.ecom.tests.CartPageTest_UI" time="2.695">
+    <system-out><![CDATA[Rows: 2, Cols: 1
+]]></system-out>
+  </testcase>
+  <testcase name="verifySubscriptionValid[kaviya@gmail.com](1)" classname="com.ecom.tests.CartPageTest_UI" time="0.52">
+    <system-out><![CDATA[Rows: 2, Cols: 1
+]]></system-out>
+  </testcase>
+  <testcase name="verifySubscriptionUseralreadyExist[kaviya@gmail.com](1)" classname="com.ecom.tests.CartPageTest_UI" time="0.67">
+    <failure message="Subscription success message should NOT be displayed! expected [false] but found [true]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Subscription success message should NOT be displayed! expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at com.ecom.tests.CartPageTest_UI.verifySubscriptionUseralreadyExist(CartPageTest_UI.java:281)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Rows: 2, Cols: 1
+]]></system-out>
+  </testcase>
+  <testcase name="verifyScrollToTopButton" classname="com.ecom.tests.CartPageTest_UI" time="0.342"/>
+  <testcase name="verifyBrowserLaunch" classname="com.ecom.tests.ContactUsPageTest_Functional" time="0.214">
+    <system-err><![CDATA[Sep 15, 2025 1:50:49 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 140, returning the closest version; found: 139; Please update to a Selenium version that supports CDP version 140
+]]></system-err>
+  </testcase>
+  <testcase name="verifyContactUsIcon" classname="com.ecom.tests.ContactUsPageTest_Functional" time="1.942"/>
+  <testcase name="enterName[Kaviya](1)" classname="com.ecom.tests.ContactUsPageTest_Functional" time="0.362">
+    <system-out><![CDATA[Rows: 2, Cols: 1
+]]></system-out>
+  </testcase>
+  <testcase name="enterSubject[Enquiry](1)" classname="com.ecom.tests.ContactUsPageTest_Functional" time="0.4">
+    <system-out><![CDATA[Rows: 2, Cols: 1
+]]></system-out>
+  </testcase>
+  <testcase name="enterMessage[I want to know about products.](1)" classname="com.ecom.tests.ContactUsPageTest_Functional" time="0.423">
+    <system-out><![CDATA[Rows: 2, Cols: 1
+]]></system-out>
+  </testcase>
+  <testcase name="uploadFile" classname="com.ecom.tests.ContactUsPageTest_Functional" time="0.25"/>
+  <testcase name="verifyEmailEmpty[kaviya, Review, Cant able to view review product](1)" classname="com.ecom.tests.ContactUsPageTest_Functional" time="1.588">
+    <system-out><![CDATA[Rows: 2, Cols: 3
+]]></system-out>
+  </testcase>
+  <testcase name="verifyEmailInvalid[kaviya, kaviya.com, Review, Cant able to view review product](1)" classname="com.ecom.tests.ContactUsPageTest_Functional" time="2.225">
+    <system-out><![CDATA[Rows: 2, Cols: 4
+]]></system-out>
+  </testcase>
+  <testcase name="enterEmail[kaviya@gmail.com](1)" classname="com.ecom.tests.ContactUsPageTest_Functional" time="0.513">
+    <system-out><![CDATA[Rows: 2, Cols: 1
+]]></system-out>
+  </testcase>
+  <testcase name="submitForm" classname="com.ecom.tests.ContactUsPageTest_Functional" time="0.434"/>
+  <testcase name="verifyNameInvalid[12#, kaviya@gmail.com, Review, Cant able to view review product](1)" classname="com.ecom.tests.ContactUsPageTest_Functional" time="3.35">
+    <failure message="Success message should NOT be displayed and pop should rise as Invalid Name expected [false] but found [true]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Success message should NOT be displayed and pop should rise as Invalid Name expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at com.ecom.tests.ContactUsPageTest_Functional.verifyNameInvalid(ContactUsPageTest_Functional.java:187)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Rows: 2, Cols: 4
+]]></system-out>
+  </testcase>
+  <testcase name="verifyNoFileAttach[kaviya, kaviya@gmail.com, Review, Cant able to view review product](1)" classname="com.ecom.tests.ContactUsPageTest_Functional" time="2.176">
+    <failure message="Success message should NOT be displayed and pop should rise as Invalid Name expected [false] but found [true]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Success message should NOT be displayed and pop should rise as Invalid Name expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at com.ecom.tests.ContactUsPageTest_Functional.verifyNoFileAttach(ContactUsPageTest_Functional.java:213)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Rows: 2, Cols: 4
+]]></system-out>
+  </testcase>
+  <testcase name="verifySubscriptionIconVisible" classname="com.ecom.tests.ContactUsPageTest_Functional" time="0.202"/>
+  <testcase name="verifySubscriptionInvalid[testgmail.com](1)" classname="com.ecom.tests.ContactUsPageTest_Functional" time="2.446">
+    <system-out><![CDATA[Rows: 2, Cols: 1
+]]></system-out>
+  </testcase>
+  <testcase name="verifySubscriptionEmpty" classname="com.ecom.tests.ContactUsPageTest_Functional" time="1.358"/>
+  <testcase name="verifySubscriptionValid[validuser1@test.com](1)" classname="com.ecom.tests.ContactUsPageTest_Functional" time="0.499">
+    <system-out><![CDATA[Rows: 2, Cols: 1
+]]></system-out>
+  </testcase>
+  <testcase name="verifySubscriptionUseralreadyExist[validuser1@test.com](1)" classname="com.ecom.tests.ContactUsPageTest_Functional" time="0.505">
+    <failure message="Subscription success message is displayed instead of error for already registered email" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Subscription success message is displayed instead of error for already registered email
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.ecom.tests.ContactUsPageTest_Functional.verifySubscriptionUseralreadyExist(ContactUsPageTest_Functional.java:307)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Rows: 2, Cols: 1
+]]></system-out>
+  </testcase>
+  <testcase name="verifyScrollToTopButton" classname="com.ecom.tests.ContactUsPageTest_Functional" time="0.262"/>
+  <testcase name="verifyNavigationBackToHome" classname="com.ecom.tests.ContactUsPageTest_Functional" time="0.293"/>
+  <testcase name="Tc_Ecom_Login_01_verifyUrlLaunch" classname="com.ecom.tests.login_functionality_tests" time="1.77">
+    <system-err><![CDATA[Sep 15, 2025 1:51:15 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 140, returning the closest version; found: 139; Please update to a Selenium version that supports CDP version 140
+]]></system-err>
+  </testcase>
+  <testcase name="Tc_Ecom_Login_02_verifyHomePageDisplayed" classname="com.ecom.tests.login_functionality_tests" time="0.045"/>
+  <testcase name="Tc_Ecom_Login_03_navigateToLoginSignupPage" classname="com.ecom.tests.login_functionality_tests" time="1.524"/>
+  <testcase name="Tc_Ecom_Login_04_verifyLoginToYourAccountText" classname="com.ecom.tests.login_functionality_tests" time="1.073"/>
+  <testcase name="Tc_Ecom_Login_05_validCredentialsEntry" classname="com.ecom.tests.login_functionality_tests" time="1.86"/>
+  <testcase name="Tc_Ecom_Login_06_invalidLogin" classname="com.ecom.tests.login_functionality_tests" time="11.455"/>
+  <testcase name="Tc_Ecom_Login_07_validEmailInvalidPassword" classname="com.ecom.tests.login_functionality_tests" time="2.791"/>
+  <testcase name="Tc_Ecom_Login_08_invalidEmailValidPassword" classname="com.ecom.tests.login_functionality_tests" time="2.335"/>
+  <testcase name="Tc_Ecom_Login_9_blankEmailAndPassword" classname="com.ecom.tests.login_functionality_tests" time="13.891"/>
+  <testcase name="verifyBrowserLaunch" classname="com.ecom.tests.ProductPageTest_Functional" time="15.594">
+    <system-err><![CDATA[Sep 15, 2025 1:51:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 140, returning the closest version; found: 139; Please update to a Selenium version that supports CDP version 140
+]]></system-err>
+  </testcase>
+  <testcase name="verifyContactUsIcon" classname="com.ecom.tests.ProductPageTest_Functional" time="3.058"/>
+  <testcase name="verifyAllProductSection" classname="com.ecom.tests.ProductPageTest_Functional" time="0.225"/>
+  <testcase name="verifyAddToCart" classname="com.ecom.tests.ProductPageTest_Functional" time="2.614"/>
+  <testcase name="verifyViewProductButton" classname="com.ecom.tests.ProductPageTest_Functional" time="1.177"/>
+  <testcase name="verifyProductDetail" classname="com.ecom.tests.ProductPageTest_Functional" time="0.197"/>
+  <testcase name="verifyProductName" classname="com.ecom.tests.ProductPageTest_Functional" time="0.216"/>
+  <testcase name="verifyProductCategory" classname="com.ecom.tests.ProductPageTest_Functional" time="0.201"/>
+  <testcase name="verifyProductPrice" classname="com.ecom.tests.ProductPageTest_Functional" time="0.187"/>
+  <testcase name="verifyProductAvailability" classname="com.ecom.tests.ProductPageTest_Functional" time="0.174"/>
+  <testcase name="verifyProductCondition" classname="com.ecom.tests.ProductPageTest_Functional" time="0.156"/>
+  <testcase name="verifyProductBrand" classname="com.ecom.tests.ProductPageTest_Functional" time="0.143"/>
+  <testcase name="verifyWriteYourReview[TestUser1 , test1@example.com, This is my first review.](1)" classname="com.ecom.tests.ProductPageTest_Functional" time="0.671">
+    <system-out><![CDATA[Rows: 2, Cols: 3
+]]></system-out>
+  </testcase>
+  <testcase name="verifyProductSearch[Jeans](1)" classname="com.ecom.tests.ProductPageTest_Functional" time="4.076">
+    <system-out><![CDATA[Rows: 2, Cols: 1
+]]></system-out>
+  </testcase>
+  <testcase name="verifySearchProductsSection" classname="com.ecom.tests.ProductPageTest_Functional" time="0.282"/>
+  <testcase name="verifySubscriptionIconVisible" classname="com.ecom.tests.ProductPageTest_Functional" time="0.216"/>
+  <testcase name="verifySubscriptionEmpty" classname="com.ecom.tests.ProductPageTest_Functional" time="0.682"/>
+  <testcase name="verifySubscriptionInvalid[kaviyaGma.com](1)" classname="com.ecom.tests.ProductPageTest_Functional" time="2.568">
+    <system-out><![CDATA[Rows: 2, Cols: 1
+]]></system-out>
+  </testcase>
+  <testcase name="verifySubscriptionValid[kaviya@gmail.com](1)" classname="com.ecom.tests.ProductPageTest_Functional" time="0.495">
+    <system-out><![CDATA[Rows: 2, Cols: 1
+]]></system-out>
+  </testcase>
+  <testcase name="verifySubscriptionUseralreadyExist[kaviya@gmail.com](1)" classname="com.ecom.tests.ProductPageTest_Functional" time="0.416">
+    <failure message="Subscription success message should NOT be displayed! expected [false] but found [true]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Subscription success message should NOT be displayed! expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at com.ecom.tests.ProductPageTest_Functional.verifySubscriptionUseralreadyExist(ProductPageTest_Functional.java:324)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Rows: 2, Cols: 1
+]]></system-out>
+  </testcase>
+  <testcase name="verifyScrollToTopButton" classname="com.ecom.tests.ProductPageTest_Functional" time="0.291"/>
+  <testcase name="verifyBrowserLaunch" classname="com.ecom.tests.RegisterPageTest_Functional" time="0.289">
+    <system-err><![CDATA[Sep 15, 2025 1:52:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 140, returning the closest version; found: 139; Please update to a Selenium version that supports CDP version 140
+]]></system-err>
+  </testcase>
+  <testcase name="verifyHomePageVisibility" classname="com.ecom.tests.RegisterPageTest_Functional" time="0.415"/>
+  <testcase name="verifySignupLoginButtonAvailability" classname="com.ecom.tests.RegisterPageTest_Functional" time="1.171"/>
+  <testcase name="verifySignupLoginNavigation" classname="com.ecom.tests.RegisterPageTest_Functional" time="0.13"/>
+  <testcase name="verifyNewUserSignupSectionVisibility" classname="com.ecom.tests.RegisterPageTest_Functional" time="0.178"/>
+  <testcase name="verifyExistSignup[Test user c, kaviya@gmail.com](1)" classname="com.ecom.tests.RegisterPageTest_Functional" time="2.179">
+    <system-out><![CDATA[Rows: 2, Cols: 2
+]]></system-out>
+  </testcase>
+  <testcase name="verifyInvalidName[12#3, kaviya900@gmail.com](1)" classname="com.ecom.tests.RegisterPageTest_Functional" time="2.369">
+    <failure message="Navigation to Create Account should NOT happen with invalid name" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Navigation to Create Account should NOT happen with invalid name
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.ecom.tests.RegisterPageTest_Functional.verifyInvalidName(RegisterPageTest_Functional.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Rows: 2, Cols: 2
+]]></system-out>
+  </testcase>
+  <testcase name="verifyInvalidEmail[kaviya, kaviya.com](1)" classname="com.ecom.tests.RegisterPageTest_Functional" time="2.778">
+    <system-out><![CDATA[Rows: 2, Cols: 2
+]]></system-out>
+  </testcase>
+  <testcase name="verifySignup[Test user c, kavi18177@example.com](1)" classname="com.ecom.tests.RegisterPageTest_Functional" time="2.567">
+    <system-out><![CDATA[Rows: 2, Cols: 2
+]]></system-out>
+  </testcase>
+  <testcase name="verifySignuptoCreateAccount" classname="com.ecom.tests.RegisterPageTest_Functional" time="0.154"/>
+  <testcase name="selectTitleTest[Mrs](1)" classname="com.ecom.tests.RegisterPageTest_Functional" time="0.308">
+    <system-out><![CDATA[Rows: 2, Cols: 1
+]]></system-out>
+  </testcase>
+  <testcase name="enterPasswordTest[Password@123](1)" classname="com.ecom.tests.RegisterPageTest_Functional" time="0.37">
+    <system-out><![CDATA[Rows: 2, Cols: 1
+]]></system-out>
+  </testcase>
+  <testcase name="selectDateOfBirthTest[18, March, 2006](1)" classname="com.ecom.tests.RegisterPageTest_Functional" time="0.578">
+    <system-out><![CDATA[Rows: 3, Cols: 3
+]]></system-out>
+  </testcase>
+  <testcase name="selectNewsletterTest" classname="com.ecom.tests.RegisterPageTest_Functional" time="0.335"/>
+  <testcase name="verifySpecialOffersCheckbox" classname="com.ecom.tests.RegisterPageTest_Functional" time="0.287"/>
+  <testcase name="verifyAddressHeading" classname="com.ecom.tests.RegisterPageTest_Functional" time="0.17"/>
+  <testcase name="enterFirstName[Kaviya](1)" classname="com.ecom.tests.RegisterPageTest_Functional" time="0.269">
+    <system-out><![CDATA[Rows: 2, Cols: 1
+]]></system-out>
+  </testcase>
+  <testcase name="enterLastName[Anjali](1)" classname="com.ecom.tests.RegisterPageTest_Functional" time="0.277">
+    <system-out><![CDATA[Rows: 2, Cols: 1
+]]></system-out>
+  </testcase>
+  <testcase name="enterCompany[CGI](1)" classname="com.ecom.tests.RegisterPageTest_Functional" time="0.28">
+    <system-out><![CDATA[Rows: 2, Cols: 1
+]]></system-out>
+  </testcase>
+  <testcase name="enterAddress1[123 Main Street](1)" classname="com.ecom.tests.RegisterPageTest_Functional" time="0.313">
+    <system-out><![CDATA[Rows: 2, Cols: 1
+]]></system-out>
+  </testcase>
+  <testcase name="enterAddress2[Block C](1)" classname="com.ecom.tests.RegisterPageTest_Functional" time="0.332">
+    <system-out><![CDATA[Rows: 2, Cols: 1
+]]></system-out>
+  </testcase>
+  <testcase name="selectCountry[India](1)" classname="com.ecom.tests.RegisterPageTest_Functional" time="0.282">
+    <system-out><![CDATA[Rows: 2, Cols: 1
+]]></system-out>
+  </testcase>
+  <testcase name="enterState[Tamil Nadu](1)" classname="com.ecom.tests.RegisterPageTest_Functional" time="0.336">
+    <system-out><![CDATA[Rows: 2, Cols: 1
+]]></system-out>
+  </testcase>
+  <testcase name="enterCity[Chennai](1)" classname="com.ecom.tests.RegisterPageTest_Functional" time="0.351">
+    <system-out><![CDATA[Rows: 2, Cols: 1
+]]></system-out>
+  </testcase>
+  <testcase name="enterZipcode[560001](1)" classname="com.ecom.tests.RegisterPageTest_Functional" time="0.283">
+    <system-out><![CDATA[Rows: 2, Cols: 1
+]]></system-out>
+  </testcase>
+  <testcase name="enterMobile[1234567891](1)" classname="com.ecom.tests.RegisterPageTest_Functional" time="0.336">
+    <system-out><![CDATA[Rows: 2, Cols: 1
+]]></system-out>
+  </testcase>
+  <testcase name="clickCreateAccountButton" classname="com.ecom.tests.RegisterPageTest_Functional" time="2.333"/>
+  <testcase name="verifyAccountCreatedMessage" classname="com.ecom.tests.RegisterPageTest_Functional" time="0.311"/>
+  <testcase name="verifyLoggedInAsUsername" classname="com.ecom.tests.RegisterPageTest_Functional" time="3.051"/>
+  <testcase name="clickDeleteAccount" classname="com.ecom.tests.RegisterPageTest_Functional" time="1.583"/>
+  <testcase name="verifyAccountDeletedMessage" classname="com.ecom.tests.RegisterPageTest_Functional" time="0.157"/>
+  <testcase name="clickContinueAfterAccountDeleted" classname="com.ecom.tests.RegisterPageTest_Functional" time="2.163"/>
+  <testcase name="verifySubscriptionIconVisible" classname="com.ecom.tests.SubscriptionHomePageTest_Functional" time="2.218">
+    <system-err><![CDATA[Sep 15, 2025 1:53:07 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 140, returning the closest version; found: 139; Please update to a Selenium version that supports CDP version 140
+]]></system-err>
+  </testcase>
+  <testcase name="verifySubscriptionEmpty" classname="com.ecom.tests.SubscriptionHomePageTest_Functional" time="0.592"/>
+  <testcase name="verifySubscriptionInvalid[kaviyaGma.com](1)" classname="com.ecom.tests.SubscriptionHomePageTest_Functional" time="2.618">
+    <system-out><![CDATA[Rows: 2, Cols: 1
+]]></system-out>
+  </testcase>
+  <testcase name="verifySubscriptionValid[kaviya@gmail.com](1)" classname="com.ecom.tests.SubscriptionHomePageTest_Functional" time="0.502">
+    <system-out><![CDATA[Rows: 2, Cols: 1
+]]></system-out>
+  </testcase>
+  <testcase name="verifySubscriptionUseralreadyExist[kaviya@gmail.com](1)" classname="com.ecom.tests.SubscriptionHomePageTest_Functional" time="0.514">
+    <failure message="Subscription success message should NOT be displayed! expected [false] but found [true]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Subscription success message should NOT be displayed! expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at com.ecom.tests.SubscriptionHomePageTest_Functional.verifySubscriptionUseralreadyExist(SubscriptionHomePageTest_Functional.java:127)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Rows: 2, Cols: 1
+]]></system-out>
+  </testcase>
+  <testcase name="verifyBrowserLaunch" classname="com.ecom.tests.TestCasesPageTest_Functional" time="0.235">
+    <system-err><![CDATA[Sep 15, 2025 1:53:20 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 140, returning the closest version; found: 139; Please update to a Selenium version that supports CDP version 140
+]]></system-err>
+  </testcase>
+  <testcase name="verifyURLLoad" classname="com.ecom.tests.TestCasesPageTest_Functional" time="3.726"/>
+  <testcase name="verifyHomePageVisibility" classname="com.ecom.tests.TestCasesPageTest_Functional" time="0.301"/>
+  <testcase name="verifyTestCasesButtonAvailability" classname="com.ecom.tests.TestCasesPageTest_Functional" time="0.301"/>
+  <testcase name="verifyNavigationToTestCasesPage" classname="com.ecom.tests.TestCasesPageTest_Functional" time="1.326"/>
+  <testcase name="verifyTestCasesPageTitle" classname="com.ecom.tests.TestCasesPageTest_Functional" time="0.182"/>
+  <testcase name="verifyTestCasesPageContent" classname="com.ecom.tests.TestCasesPageTest_Functional" time="0.17"/>
+  <testcase name="verifyDetailedStepsVisibility" classname="com.ecom.tests.TestCasesPageTest_Functional" time="0.519"/>
+  <testcase name="verifyFeedbackSectionPresence" classname="com.ecom.tests.TestCasesPageTest_Functional" time="0.222"/>
+  <testcase name="verifyHyperlinksPresence" classname="com.ecom.tests.TestCasesPageTest_Functional" time="0.17"/>
+  <testcase name="verifyFeedbackEmailPresence" classname="com.ecom.tests.TestCasesPageTest_Functional" time="0.195"/>
+  <testcase name="verifyScrollBarFunctionality" classname="com.ecom.tests.TestCasesPageTest_Functional" time="0.16"/>
+  <testcase name="verifyScrollToTopArrowFunctionality" classname="com.ecom.tests.TestCasesPageTest_Functional" time="0.303"/>
+  <testcase name="verifySubscriptionWithEmptyEmail" classname="com.ecom.tests.TestCasesPageTest_Functional" time="10.897"/>
+  <testcase name="verifySubscriptionInvalid[keerthi12gmail.com](1)" classname="com.ecom.tests.TestCasesPageTest_Functional" time="2.58">
+    <system-out><![CDATA[Rows: 2, Cols: 1
+]]></system-out>
+  </testcase>
+  <testcase name="verifySubscriptionWithValidEmail[keerthi12@gmail.com](1)" classname="com.ecom.tests.TestCasesPageTest_Functional" time="0.482">
+    <system-out><![CDATA[Rows: 2, Cols: 1
+]]></system-out>
+  </testcase>
+  <testcase name="verifyLogoDisplayed" classname="com.ecom.tests.TestCasesPageTest_UI" time="1.14">
+    <system-err><![CDATA[Sep 15, 2025 1:53:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 140, returning the closest version; found: 139; Please update to a Selenium version that supports CDP version 140
+]]></system-err>
+  </testcase>
+  <testcase name="verifyProductsIconDisplayed" classname="com.ecom.tests.TestCasesPageTest_UI" time="0.204"/>
+  <testcase name="verifyCartIconDisplayed" classname="com.ecom.tests.TestCasesPageTest_UI" time="0.255"/>
+  <testcase name="verifySignupLoginIconDisplayed" classname="com.ecom.tests.TestCasesPageTest_UI" time="0.165"/>
+  <testcase name="verifyVideoTutorialsIconDisplayed" classname="com.ecom.tests.TestCasesPageTest_UI" time="0.174"/>
+  <testcase name="verifyHomeIconDisplayed" classname="com.ecom.tests.TestCasesPageTest_UI" time="0.147"/>
+  <testcase name="verifyContactUsIconDisplayed" classname="com.ecom.tests.TestCasesPageTest_UI" time="0.14"/>
+  <testcase name="verifyApiTestingIconDisplayed" classname="com.ecom.tests.TestCasesPageTest_UI" time="0.137"/>
+  <testcase name="verifyTestCasesSectionDisplayed" classname="com.ecom.tests.TestCasesPageTest_UI" time="0.135"/>
+  <testcase name="verifyTestCase1LinkDisplayed" classname="com.ecom.tests.TestCasesPageTest_UI" time="0.503"/>
+  <testcase name="verifyTestCase2LinkDisplayed" classname="com.ecom.tests.TestCasesPageTest_UI" time="0.512"/>
+  <testcase name="verifyTestCase3LinkDisplayed" classname="com.ecom.tests.TestCasesPageTest_UI" time="0.509"/>
+  <testcase name="verifyTestCase4LinkDisplayed" classname="com.ecom.tests.TestCasesPageTest_UI" time="0.472"/>
+  <testcase name="verifyTestCase5LinkDisplayed" classname="com.ecom.tests.TestCasesPageTest_UI" time="0.493"/>
+  <testcase name="verifyTestCase6LinkDisplayed" classname="com.ecom.tests.TestCasesPageTest_UI" time="0.494"/>
+  <testcase name="verifyTestCase7LinkDisplayed" classname="com.ecom.tests.TestCasesPageTest_UI" time="0.489"/>
+  <testcase name="verifyTestCase8LinkDisplayed" classname="com.ecom.tests.TestCasesPageTest_UI" time="0.498"/>
+  <testcase name="verifyTestCase9LinkDisplayed" classname="com.ecom.tests.TestCasesPageTest_UI" time="0.51"/>
+  <testcase name="verifyTestCase10LinkDisplayed" classname="com.ecom.tests.TestCasesPageTest_UI" time="0.767"/>
+  <testcase name="verifyTestCase11LinkDisplayed" classname="com.ecom.tests.TestCasesPageTest_UI" time="0.699"/>
+  <testcase name="verifyTestCase12LinkDisplayed" classname="com.ecom.tests.TestCasesPageTest_UI" time="0.495"/>
+  <testcase name="verifyTestCase13LinkDisplayed" classname="com.ecom.tests.TestCasesPageTest_UI" time="0.664"/>
+  <testcase name="verifyTestCase14LinkDisplayed" classname="com.ecom.tests.TestCasesPageTest_UI" time="0.52"/>
+  <testcase name="verifyTestCase15LinkDisplayed" classname="com.ecom.tests.TestCasesPageTest_UI" time="0.499"/>
+  <testcase name="verifyTestCase16LinkDisplayed" classname="com.ecom.tests.TestCasesPageTest_UI" time="0.505"/>
+  <testcase name="verifyTestCase17LinkDisplayed" classname="com.ecom.tests.TestCasesPageTest_UI" time="0.513"/>
+  <testcase name="verifyTestCase18LinkDisplayed" classname="com.ecom.tests.TestCasesPageTest_UI" time="0.494"/>
+  <testcase name="verifyTestCase19LinkDisplayed" classname="com.ecom.tests.TestCasesPageTest_UI" time="0.465"/>
+  <testcase name="verifyTestCase20LinkDisplayed" classname="com.ecom.tests.TestCasesPageTest_UI" time="0.496"/>
+  <testcase name="verifyTestCase21LinkDisplayed" classname="com.ecom.tests.TestCasesPageTest_UI" time="0.482"/>
+  <testcase name="verifyTestCase22LinkDisplayed" classname="com.ecom.tests.TestCasesPageTest_UI" time="0.496"/>
+  <testcase name="verifyTestCase23LinkDisplayed" classname="com.ecom.tests.TestCasesPageTest_UI" time="0.513"/>
+  <testcase name="verifyTestCase24LinkDisplayed" classname="com.ecom.tests.TestCasesPageTest_UI" time="0.514"/>
+  <testcase name="verifyTestCase25LinkDisplayed" classname="com.ecom.tests.TestCasesPageTest_UI" time="0.531"/>
+  <testcase name="verifyTestCase26LinkDisplayed" classname="com.ecom.tests.TestCasesPageTest_UI" time="0.492"/>
+  <testcase name="verifyFeedbackSectionDisplayed" classname="com.ecom.tests.TestCasesPageTest_UI" time="0.168"/>
+  <testcase name="verifyFeedbackEmailDisplayed" classname="com.ecom.tests.TestCasesPageTest_UI" time="0.152"/>
+  <testcase name="verifySubscriptionIconVisible" classname="com.ecom.tests.TestCasesPageTest_UI" time="0.164"/>
+  <testcase name="verifySubscriptionEmpty" classname="com.ecom.tests.TestCasesPageTest_UI" time="0.55"/>
+  <testcase name="verifySubscriptionInvalid[kaviyaGma.com](1)" classname="com.ecom.tests.TestCasesPageTest_UI" time="2.567">
+    <system-out><![CDATA[Rows: 2, Cols: 1
+]]></system-out>
+  </testcase>
+  <testcase name="verifySubscriptionValid[kaviya@gmail.com](1)" classname="com.ecom.tests.TestCasesPageTest_UI" time="0.509">
+    <system-out><![CDATA[Rows: 2, Cols: 1
+]]></system-out>
+  </testcase>
+  <testcase name="verifySubscriptionUseralreadyExist[kaviya@gmail.com](1)" classname="com.ecom.tests.TestCasesPageTest_UI" time="0.459">
+    <failure message="Subscription success message should NOT be displayed! expected [false] but found [true]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Subscription success message should NOT be displayed! expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at com.ecom.tests.TestCasesPageTest_UI.verifySubscriptionUseralreadyExist(TestCasesPageTest_UI.java:524)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Rows: 2, Cols: 1
+]]></system-out>
+  </testcase>
+  <testcase name="verifyScrollToTopButton" classname="com.ecom.tests.TestCasesPageTest_UI" time="0.286"/>
+  <testcase name="TC_Contactus_001_verifyGetInTouchHeader" classname="com.ecom.tests.UI_contactus_test" time="3.146">
+    <system-err><![CDATA[Sep 15, 2025 1:54:13 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 140, returning the closest version; found: 139; Please update to a Selenium version that supports CDP version 140
+]]></system-err>
+  </testcase>
+  <testcase name="TC_Contactus_002_verifyLogoDisplayed" classname="com.ecom.tests.UI_contactus_test" time="0.792"/>
+  <testcase name="TC_Contactus_003_verifyGetInTouchEmailDisplayed" classname="com.ecom.tests.UI_contactus_test" time="0.992"/>
+  <testcase name="TC_Contactus_004_verifyFormFieldsDisplayed" classname="com.ecom.tests.UI_contactus_test" time="1.211"/>
+  <testcase name="TC_Contactus_005_verifyChooseFileAndSubmitDisplayed" classname="com.ecom.tests.UI_contactus_test" time="0.723"/>
+  <testcase name="TC_Contactus_006_verifyHomeBtnDisplayed" classname="com.ecom.tests.UI_contactus_test" time="1.005"/>
+  <testcase name="TC_Contactus_007_verifyTestCasesBtnDisplayed" classname="com.ecom.tests.UI_contactus_test" time="0.991"/>
+  <testcase name="TC_Contactus_008_verifyApiTestingBtnDisplayed" classname="com.ecom.tests.UI_contactus_test" time="1.315"/>
+  <testcase name="TC_Contact_009_verifyScrollBarWorking" classname="com.ecom.tests.UI_contactus_test" time="0.758"/>
+  <testcase name="TC_Contact_010_verifyScrollToTopArrow" classname="com.ecom.tests.UI_contactus_test" time="0.873"/>
+  <testcase name="TC_Contact_011_verifySubscriptionIconDisplayed" classname="com.ecom.tests.UI_contactus_test" time="0.868"/>
+  <testcase name="TC_Contact_012_verifySubscriptionWithInvalidEmail" classname="com.ecom.tests.UI_contactus_test" time="1.401"/>
+  <testcase name="TC_Contact_013_verifySubscriptionWithEmptyEmail" classname="com.ecom.tests.UI_contactus_test" time="1.129"/>
+  <testcase name="TC_Contact_014_verifyGetInTouchHeader" classname="com.ecom.tests.UI_contactus_test" time="0.755"/>
+  <testcase name="TC_Contact_015_verifyNameFieldDisplayed" classname="com.ecom.tests.UI_contactus_test" time="0.897"/>
+  <testcase name="TC_Contact_016_verifyEmailFieldDisplayed" classname="com.ecom.tests.UI_contactus_test" time="0.966"/>
+  <testcase name="TC_Contact_017_verifySubjectFieldDisplayed" classname="com.ecom.tests.UI_contactus_test" time="0.881"/>
+  <testcase name="TC_Contact_018_verifyMessageFieldDisplayed" classname="com.ecom.tests.UI_contactus_test" time="0.849"/>
+  <testcase name="TC_Contact_019_verifyNameFieldWithValidData" classname="com.ecom.tests.UI_contactus_test" time="1.126"/>
+  <testcase name="TC_Contact_020_verifyEmailFieldWithValidData" classname="com.ecom.tests.UI_contactus_test" time="1.076"/>
+  <testcase name="TC_Contact_021_verifyEmailFieldEmpty" classname="com.ecom.tests.UI_contactus_test" time="1.162"/>
+  <testcase name="TC_Contact_022_verifySubjectFieldWithData" classname="com.ecom.tests.UI_contactus_test" time="1.082"/>
+  <testcase name="TC_Contact_023_verifyMessageFieldWithData" classname="com.ecom.tests.UI_contactus_test" time="1.157"/>
+  <testcase name="TC_Contact_024_verifyChooseFileButton" classname="com.ecom.tests.UI_contactus_test" time="0.7"/>
+  <testcase name="TC_Contact_025_verifySubmitButton" classname="com.ecom.tests.UI_contactus_test" time="0.889"/>
+  <testcase name="TC_Contact_026_verifyContactUsSectionVisible" classname="com.ecom.tests.UI_contactus_test" time="1.017"/>
+  <testcase name="verifyAutomationEngineerLogoIsVisible" classname="com.ecom.tests.UI_HomePageTest" time="2.105">
+    <system-err><![CDATA[Sep 15, 2025 1:54:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 140, returning the closest version; found: 139; Please update to a Selenium version that supports CDP version 140
+]]></system-err>
+  </testcase>
+  <testcase name="verifyProductsButtonIsVisibleAndNavigates" classname="com.ecom.tests.UI_HomePageTest" time="4.008"/>
+  <testcase name="verifyCartButtonIsVisibleAndNavigates" classname="com.ecom.tests.UI_HomePageTest" time="2.87"/>
+  <testcase name="verifySignupLoginButtonIsVisibleAndNavigates" classname="com.ecom.tests.UI_HomePageTest" time="3.152"/>
+  <testcase name="verifyContactUsButtonIsVisibleAndNavigates" classname="com.ecom.tests.UI_HomePageTest" time="3.859"/>
+  <testcase name="verifyTestCasesButtonIsVisibleAndNavigates" classname="com.ecom.tests.UI_HomePageTest" time="3.809"/>
+  <testcase name="verifyApiTestingButtonIsVisibleAndNavigates" classname="com.ecom.tests.UI_HomePageTest" time="3.135"/>
+  <testcase name="verifyVideoTutorialsButtonIsVisibleAndNavigatesAndReturns" classname="com.ecom.tests.UI_HomePageTest" time="11.503"/>
+  <testcase name="verifyScrollBarFunctionalityOnHomePage" classname="com.ecom.tests.UI_HomePageTest" time="2.933"/>
+  <testcase name="verifyScrollToTopArrowFunctionality" classname="com.ecom.tests.UI_HomePageTest" time="5.981"/>
+  <testcase name="verifySubscriptionIconIsVisibleOnHomePage" classname="com.ecom.tests.UI_HomePageTest" time="4.16"/>
+  <testcase name="verifySubscriptionScenarios[keerthi@gmail.com, valid](1)" classname="com.ecom.tests.UI_HomePageTest" time="3.089">
+    <system-out><![CDATA[Rows: 5, Cols: 2
+]]></system-out>
+  </testcase>
+  <testcase name="verifySubscriptionScenarios[keerthigmail.com, invalid](2)" classname="com.ecom.tests.UI_HomePageTest" time="2.739"/>
+  <testcase name="verifySubscriptionScenarios[, blank](3)" classname="com.ecom.tests.UI_HomePageTest" time="2.668"/>
+  <testcase name="verifySubscriptionScenarios[keerthi@gmail.com, duplicate](4)" classname="com.ecom.tests.UI_HomePageTest" time="2.459"/>
+  <testcase name="verifyViewProductButtonIsVisible" classname="com.ecom.tests.UI_HomePageTest" time="1.868"/>
+  <testcase name="verifyBrandsSectionIsVisible" classname="com.ecom.tests.UI_HomePageTest" time="2.219"/>
+  <testcase name="verifyCategorySectionIsVisible" classname="com.ecom.tests.UI_HomePageTest" time="1.917"/>
+  <testcase name="verifyFeaturedItemsSectionIsVisible" classname="com.ecom.tests.UI_HomePageTest" time="1.861"/>
+  <testcase name="verifyRecommendedItemsSectionIsVisible" classname="com.ecom.tests.UI_HomePageTest" time="1.983"/>
+  <testcase name="verifyCarouselIndicatorDotIsVisibleAndWorking" classname="com.ecom.tests.UI_HomePageTest" time="2.007"/>
+  <testcase name="verifyLogoImagePresence" classname="com.ecom.tests.UI_LoginPageTest" time="2.793">
+    <system-err><![CDATA[Sep 15, 2025 1:56:00 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 140, returning the closest version; found: 139; Please update to a Selenium version that supports CDP version 140
+]]></system-err>
+  </testcase>
+  <testcase name="verifySignupButtonPresence" classname="com.ecom.tests.UI_LoginPageTest" time="1.03"/>
+  <testcase name="verifySignupWithValidData[Keerthana , keerthi123@gmail.com](1)" classname="com.ecom.tests.UI_LoginPageTest" time="12.173">
+    <system-out><![CDATA[Rows: 2, Cols: 2
+]]></system-out>
+  </testcase>
+  <testcase name="verifySignupWithInvalidEmail[Keerthana V S, keerthanavs12@gmail.com](1)" classname="com.ecom.tests.UI_LoginPageTest" time="2.955">
+    <system-out><![CDATA[Rows: 2, Cols: 2
+]]></system-out>
+  </testcase>
+  <testcase name="verifySignupEdgeCases[, keerthanavs@gmail.com, NoNameValidEmail](1)" classname="com.ecom.tests.UI_LoginPageTest" time="11.644">
+    <system-out><![CDATA[Rows: 4, Cols: 3
+]]></system-out>
+  </testcase>
+  <testcase name="verifySignupEdgeCases[Keerthana V S, , ValidNameNoEmail](2)" classname="com.ecom.tests.UI_LoginPageTest" time="12.162"/>
+  <testcase name="verifySignupEdgeCases[, , NoNameNoEmail](3)" classname="com.ecom.tests.UI_LoginPageTest" time="12.036"/>
+  <testcase name="verifyLoginButtonIsVisibleOnSignupLoginPage" classname="com.ecom.tests.UI_LoginPageTest" time="21.35"/>
+  <testcase name="verifyLoginEdgeCases[keerthanavs@gmail.com, Keerthi123, InvalidEmailInvalidPassword](1)" classname="com.ecom.tests.UI_LoginPageTest" time="23.1">
+    <system-out><![CDATA[Rows: 7, Cols: 3
+]]></system-out>
+  </testcase>
+  <testcase name="verifyLoginEdgeCases[keerthanavs12@gmail.com, Keerthi123, ValidEmailInvalidPassword](2)" classname="com.ecom.tests.UI_LoginPageTest" time="22.71"/>
+  <testcase name="verifyLoginEdgeCases[keerthanavs@gmail.com, Keerthi@123, InvalidEmailValidPassword](3)" classname="com.ecom.tests.UI_LoginPageTest" time="23.27"/>
+  <testcase name="verifyLoginEdgeCases[, , BlankEmailBlankPassword](4)" classname="com.ecom.tests.UI_LoginPageTest" time="32.102"/>
+  <testcase name="verifyLoginEdgeCases[, Keerthi@123, BlankEmailValidPassword](5)" classname="com.ecom.tests.UI_LoginPageTest" time="32.29"/>
+  <testcase name="verifyLoginEdgeCases[keerthanavs12@gmail.com, , ValidEmailBlankPassword](6)" classname="com.ecom.tests.UI_LoginPageTest" time="46.895"/>
+  <testcase name="verifyValidLogin[keerthanavs12@gmail.com, Keerthi@123, ValidLogin](1)" classname="com.ecom.tests.UI_LoginPageTest" time="17.455">
+    <system-out><![CDATA[Rows: 2, Cols: 3
+]]></system-out>
+  </testcase>
+  <testcase name="verifyScrollBarFunctionalityOnSignupLoginPage" classname="com.ecom.tests.UI_LoginPageTest" time="11.732"/>
+  <testcase name="verifyScrollToTopArrowFunctionalityOnSignupLoginPage" classname="com.ecom.tests.UI_LoginPageTest" time="13.572"/>
+  <testcase name="verifySubscriptionIconIsVisibleOnSignupLoginPage" classname="com.ecom.tests.UI_LoginPageTest" time="11.558"/>
+  <testcase name="verifySignupLoginPageLabels" classname="com.ecom.tests.UI_LoginPageTest" time="11.704"/>
+  <testcase name="verifyNavigationIconsOnSignupLoginPage" classname="com.ecom.tests.UI_LoginPageTest" time="11.841"/>
+  <testcase name="verifyLogoDisplayed" classname="com.ecom.tests.UI_ProductPageTest" time="2.015">
+    <system-err><![CDATA[Sep 15, 2025 2:01:38 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 140, returning the closest version; found: 139; Please update to a Selenium version that supports CDP version 140
+]]></system-err>
+  </testcase>
+  <testcase name="verifyCartIconDisplayed" classname="com.ecom.tests.UI_ProductPageTest" time="0.268"/>
+  <testcase name="verifyTestCasesDisplayed" classname="com.ecom.tests.UI_ProductPageTest" time="0.187"/>
+  <testcase name="verifySignupLoginIconDisplayed" classname="com.ecom.tests.UI_ProductPageTest" time="0.186"/>
+  <testcase name="verifyVideoTutorialsIconDisplayed" classname="com.ecom.tests.UI_ProductPageTest" time="0.157"/>
+  <testcase name="verifyHomeIconDisplayed" classname="com.ecom.tests.UI_ProductPageTest" time="0.155"/>
+  <testcase name="verifyContactUsIconDisplayed" classname="com.ecom.tests.UI_ProductPageTest" time="0.139"/>
+  <testcase name="verifyApiTestingIconDisplayed" classname="com.ecom.tests.UI_ProductPageTest" time="0.157"/>
+  <testcase name="verifyPromotionalBannerDisplayed" classname="com.ecom.tests.UI_ProductPageTest" time="0.163"/>
+  <testcase name="verifyAllProductSection" classname="com.ecom.tests.UI_ProductPageTest" time="0.264"/>
+  <testcase name="verifyAddProductIcon" classname="com.ecom.tests.UI_ProductPageTest" time="0.277"/>
+  <testcase name="verifyViewProductIcon" classname="com.ecom.tests.UI_ProductPageTest" time="0.299"/>
+  <testcase name="verifyCategorySection" classname="com.ecom.tests.UI_ProductPageTest" time="0.256"/>
+  <testcase name="verifyBrandsSection" classname="com.ecom.tests.UI_ProductPageTest" time="0.249"/>
+  <testcase name="verifyProductSearch[Jeans](1)" classname="com.ecom.tests.UI_ProductPageTest" time="1.724">
+    <system-out><![CDATA[Rows: 2, Cols: 1
+]]></system-out>
+  </testcase>
+  <testcase name="verifySearchProductsSection" classname="com.ecom.tests.UI_ProductPageTest" time="0.376"/>
+  <testcase name="verifyCategoryAndBrandNavigation" classname="com.ecom.tests.UI_ProductPageTest" time="0.9"/>
+  <testcase name="verifySubscriptionIconVisible" classname="com.ecom.tests.UI_ProductPageTest" time="0.219"/>
+  <testcase name="verifySubscriptionEmpty" classname="com.ecom.tests.UI_ProductPageTest" time="0.694"/>
+  <testcase name="verifySubscriptionInvalid[kaviyaGma.com](1)" classname="com.ecom.tests.UI_ProductPageTest" time="2.833">
+    <system-out><![CDATA[Rows: 2, Cols: 1
+]]></system-out>
+  </testcase>
+  <testcase name="verifySubscriptionValid[kaviya@gmail.com](1)" classname="com.ecom.tests.UI_ProductPageTest" time="0.675">
+    <system-out><![CDATA[Rows: 2, Cols: 1
+]]></system-out>
+  </testcase>
+  <testcase name="verifySubscriptionUseralreadyExist[kaviya@gmail.com](1)" classname="com.ecom.tests.UI_ProductPageTest" time="0.466">
+    <failure message="Subscription success message should NOT be displayed! expected [false] but found [true]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Subscription success message should NOT be displayed! expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at com.ecom.tests.UI_ProductPageTest.verifySubscriptionUseralreadyExist(UI_ProductPageTest.java:330)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Rows: 2, Cols: 1
+]]></system-out>
+  </testcase>
+  <testcase name="verifyScrollToTopButton" classname="com.ecom.tests.UI_ProductPageTest" time="0.316"/>
+</testsuite>

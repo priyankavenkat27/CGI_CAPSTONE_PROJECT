@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<!-- Chrome Execution -->
+    <test name="LoginPage_Functional - Chrome">
+      <parameter name="browser" value="chrome"/>
+      <classes>
+      <class name="com.ecom.tests.login_functionality_tests"/>    
+    </classes>
+  </test> 
+</suite> <!-- Suite -->

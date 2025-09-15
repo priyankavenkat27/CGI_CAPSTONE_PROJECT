@@ -1,0 +1,180 @@
+<html>
+<head>
+<title>TestNG:  LoginPage_UI - Chrome</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>LoginPage_UI - Chrome</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>20/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Sep 15 14:53:48 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>339 seconds (339207 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.ecom.tests.UI_LoginPageTest.verifySignupWithValidData()'><b>verifySignupWithValidData</b><br>Test class: com.ecom.tests.UI_LoginPageTest<br>Parameters: Keerthana , keerthi123@gmail.com</td>
+<td></td>
+<td>15</td>
+<td>com.ecom.tests.UI_LoginPageTest@6db9f5a4</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_LoginPageTest.verifyLoginEdgeCases()'><b>verifyLoginEdgeCases</b><br>Test class: com.ecom.tests.UI_LoginPageTest<br>Parameters: keerthanavs@gmail.com, Keerthi123, InvalidEmailInvalidPassword</td>
+<td></td>
+<td>22</td>
+<td>com.ecom.tests.UI_LoginPageTest@6db9f5a4</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_LoginPageTest.verifyLoginEdgeCases()'><b>verifyLoginEdgeCases</b><br>Test class: com.ecom.tests.UI_LoginPageTest<br>Parameters: keerthanavs@gmail.com, Keerthi@123, InvalidEmailValidPassword</td>
+<td></td>
+<td>22</td>
+<td>com.ecom.tests.UI_LoginPageTest@6db9f5a4</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_LoginPageTest.verifySignupEdgeCases()'><b>verifySignupEdgeCases</b><br>Test class: com.ecom.tests.UI_LoginPageTest<br>Parameters: , keerthanavs@gmail.com, NoNameValidEmail</td>
+<td></td>
+<td>13</td>
+<td>com.ecom.tests.UI_LoginPageTest@6db9f5a4</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_LoginPageTest.verifyNavigationIconsOnSignupLoginPage()'><b>verifyNavigationIconsOnSignupLoginPage</b><br>Test class: com.ecom.tests.UI_LoginPageTest</td>
+<td></td>
+<td>11</td>
+<td>com.ecom.tests.UI_LoginPageTest@6db9f5a4</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_LoginPageTest.verifyScrollBarFunctionalityOnSignupLoginPage()'><b>verifyScrollBarFunctionalityOnSignupLoginPage</b><br>Test class: com.ecom.tests.UI_LoginPageTest</td>
+<td></td>
+<td>11</td>
+<td>com.ecom.tests.UI_LoginPageTest@6db9f5a4</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_LoginPageTest.verifySignupButtonPresence()'><b>verifySignupButtonPresence</b><br>Test class: com.ecom.tests.UI_LoginPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.ecom.tests.UI_LoginPageTest@6db9f5a4</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_LoginPageTest.verifyLogoImagePresence()'><b>verifyLogoImagePresence</b><br>Test class: com.ecom.tests.UI_LoginPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.ecom.tests.UI_LoginPageTest@6db9f5a4</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_LoginPageTest.verifyLoginButtonIsVisibleOnSignupLoginPage()'><b>verifyLoginButtonIsVisibleOnSignupLoginPage</b><br>Test class: com.ecom.tests.UI_LoginPageTest</td>
+<td></td>
+<td>21</td>
+<td>com.ecom.tests.UI_LoginPageTest@6db9f5a4</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_LoginPageTest.verifyScrollToTopArrowFunctionalityOnSignupLoginPage()'><b>verifyScrollToTopArrowFunctionalityOnSignupLoginPage</b><br>Test class: com.ecom.tests.UI_LoginPageTest</td>
+<td></td>
+<td>13</td>
+<td>com.ecom.tests.UI_LoginPageTest@6db9f5a4</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_LoginPageTest.verifySignupLoginPageLabels()'><b>verifySignupLoginPageLabels</b><br>Test class: com.ecom.tests.UI_LoginPageTest</td>
+<td></td>
+<td>11</td>
+<td>com.ecom.tests.UI_LoginPageTest@6db9f5a4</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_LoginPageTest.verifySignupEdgeCases()'><b>verifySignupEdgeCases</b><br>Test class: com.ecom.tests.UI_LoginPageTest<br>Parameters: , , NoNameNoEmail</td>
+<td></td>
+<td>16</td>
+<td>com.ecom.tests.UI_LoginPageTest@6db9f5a4</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_LoginPageTest.verifyLoginEdgeCases()'><b>verifyLoginEdgeCases</b><br>Test class: com.ecom.tests.UI_LoginPageTest<br>Parameters: , Keerthi@123, BlankEmailValidPassword</td>
+<td></td>
+<td>32</td>
+<td>com.ecom.tests.UI_LoginPageTest@6db9f5a4</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_LoginPageTest.verifySignupEdgeCases()'><b>verifySignupEdgeCases</b><br>Test class: com.ecom.tests.UI_LoginPageTest<br>Parameters: Keerthana V S, , ValidNameNoEmail</td>
+<td></td>
+<td>12</td>
+<td>com.ecom.tests.UI_LoginPageTest@6db9f5a4</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_LoginPageTest.verifyLoginEdgeCases()'><b>verifyLoginEdgeCases</b><br>Test class: com.ecom.tests.UI_LoginPageTest<br>Parameters: keerthanavs12@gmail.com, Keerthi123, ValidEmailInvalidPassword</td>
+<td></td>
+<td>23</td>
+<td>com.ecom.tests.UI_LoginPageTest@6db9f5a4</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_LoginPageTest.verifySubscriptionIconIsVisibleOnSignupLoginPage()'><b>verifySubscriptionIconIsVisibleOnSignupLoginPage</b><br>Test class: com.ecom.tests.UI_LoginPageTest</td>
+<td></td>
+<td>11</td>
+<td>com.ecom.tests.UI_LoginPageTest@6db9f5a4</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_LoginPageTest.verifyLoginEdgeCases()'><b>verifyLoginEdgeCases</b><br>Test class: com.ecom.tests.UI_LoginPageTest<br>Parameters: keerthanavs12@gmail.com, , ValidEmailBlankPassword</td>
+<td></td>
+<td>32</td>
+<td>com.ecom.tests.UI_LoginPageTest@6db9f5a4</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_LoginPageTest.verifySignupWithInvalidEmail()'><b>verifySignupWithInvalidEmail</b><br>Test class: com.ecom.tests.UI_LoginPageTest<br>Parameters: Keerthana V S, keerthanavs12@gmail.com</td>
+<td></td>
+<td>3</td>
+<td>com.ecom.tests.UI_LoginPageTest@6db9f5a4</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_LoginPageTest.verifyLoginEdgeCases()'><b>verifyLoginEdgeCases</b><br>Test class: com.ecom.tests.UI_LoginPageTest<br>Parameters: , , BlankEmailBlankPassword</td>
+<td></td>
+<td>32</td>
+<td>com.ecom.tests.UI_LoginPageTest@6db9f5a4</td></tr>
+<tr>
+<td title='com.ecom.tests.UI_LoginPageTest.verifyValidLogin()'><b>verifyValidLogin</b><br>Test class: com.ecom.tests.UI_LoginPageTest<br>Parameters: keerthanavs12@gmail.com, Keerthi@123, ValidLogin</td>
+<td></td>
+<td>17</td>
+<td>com.ecom.tests.UI_LoginPageTest@6db9f5a4</td></tr>
+</table><p>
+</body>
+</html>
