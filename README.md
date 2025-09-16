@@ -34,8 +34,9 @@ The project includes automation scripts, test cases, reports, and screenshots fo
 
 
 2.	Import the project in Eclipse:
-	•	File → Open Projects from File System…
-	•	Select the cloned folder and click Finish.
+   - File → Open Projects from File System…
+   - Select the cloned folder and click Finish.
+     
 3.	Build the project using Maven:
 
     ``` bash
